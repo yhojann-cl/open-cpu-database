@@ -27,8 +27,8 @@ For each CPU item the format is:
 | `String`  | `codename`                   | Codename of the CPU.                                  |
 | `Integer` | `cores.total`                | Total of cores (physical and virtual).                |
 | `Integer` | `cores.physical`             | Total of physical cores.                              |
-| `Integer` | `speedGhz.min`               | Minimal speed in Ghz.                                 |
-| `Integer` | `speedGhz.max`               | Maximum speed in Ghz.                                 |
+| `Float`   | `speedGhz.min`               | Minimal speed in Ghz.                                 |
+| `Float`   | `speedGhz.max`               | Maximum speed in Ghz.                                 |
 | `String`  | `socket`                     | Physical socket model type.                           | 
 | `Integer` | `size`                       | Size of the physical CPU.                             |
 | `String`  | `size.measure`               | Measure of the size of CPU (usually in `nanometers`). |
