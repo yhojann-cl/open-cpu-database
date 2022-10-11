@@ -14,6 +14,7 @@ Please help us keep this database up to date through pull request contributions.
 In json format the root data is:
 
 | Data type | Key name          | Description                                                                  |
+|-----------|-------------------|------------------------------------------------------------------------------|
 | `String`  | `root.version`    | Version of the database. The structure can be changed in each major version. |
 | `String`  | `root.repository` | Path of the repository of the database (for upgrades).                       |
 | `List`    | `root.list`       | Is the list of CPU items separated by each architecture.                     |
