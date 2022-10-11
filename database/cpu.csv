@@ -1,0 +1,203 @@
+name,codename,architecture,coresTotal,coresPhysical,speedGzMin,speedGzMax,socket,sizeMeasure,sizeValue,cacheL3Measure,cacheL3Size,thermalDesignPowerMeasure,thermalDesignPowerValue,released
+EPYC 7373X,Milan-X,x86_64,32,16,3.05,3.8,SP3,nanometers,7,MB,768,watts,240,2022-03-22
+EPYC 7473X,Milan-X,x86_64,48,24,2.8,3.7,SP3,nanometers,7,MB,768,watts,240,2022-03-22
+EPYC 7543,Milan,x86_64,64,32,2.8,3.7,SP3,nanometers,7,MB,256,watts,225,2021-03-15
+EPYC 7573X,Milan-X,x86_64,64,32,2.8,3.6,SP3,nanometers,7,MB,768,watts,280,2022-03-22
+EPYC 75F3,Milan,x86_64,64,32,2.95,4,SP3,nanometers,7,MB,256,watts,280,2021-03-15
+EPYC 7643,Milan,x86_64,96,48,2.3,3.6,SP3,nanometers,7,MB,256,watts,225,2021-03-15
+EPYC 7663,Milan,x86_64,112,56,2,3.5,SP3,nanometers,7,MB,256,watts,240,2021-03-15
+EPYC 7713,Milan,x86_64,128,64,2,3.675,SP3,nanometers,7,MB,256,watts,225,2021-03-15
+EPYC 7713P,Milan,x86_64,128,64,2,3.675,SP3,nanometers,7,MB,256,watts,225,2021-03-15
+EPYC 7763,Milan,x86_64,128,64,2.45,3.5,SP3,nanometers,7,MB,256,watts,280,2021-03-15
+EPYC 7773X,Milan-X,x86_64,128,64,2.2,3.5,SP3,nanometers,7,MB,768,watts,280,2022-03-22
+Ryzen 3 4100,Renoir,x86_64,8,4,3.8,4,AM4,nanometers,7,MB,8,watts,65,2022-04-04
+Ryzen 5 4500,Renoir,x86_64,12,6,3.6,4.1,AM4,nanometers,7,MB,8,watts,65,2022-04-04
+Ryzen 5 5500,Cezanne,x86_64,12,6,3.6,4.2,AM4,nanometers,7,MB,16,watts,65,2022-04-04
+Ryzen 5 5600,Vermeer,x86_64,12,6,3.5,4.4,AM4,nanometers,7,MB,32,watts,65,2022-04-20
+Ryzen 7 5700X,Vermeer,x86_64,16,8,3.4,4.6,AM4,nanometers,7,MB,32,watts,65,2022-04-04
+Ryzen 7 5800X3D,Vermeer,x86_64,16,8,3.4,4.5,AM4,nanometers,7,MB,96,watts,105,2022-04-20
+Ryzen Threadripper 5990X,Chagall,x86_64,128,64,2.5,4.45,TRX4,nanometers,7,MB,256,watts,280,
+Ryzen Threadripper PRO 5945WX,Chagall PRO,x86_64,24,12,4.1,4.5,WRX8,nanometers,7,MB,64,watts,280,2022-03-08
+Ryzen Threadripper PRO 5955WX,Chagall PRO,x86_64,32,16,4,4.5,WRX8,nanometers,7,MB,64,watts,280,2022-03-08
+Ryzen Threadripper PRO 5965WX,Chagall PRO,x86_64,48,24,3.8,4.5,WRX8,nanometers,7,MB,128,watts,280,2022-03-08
+Ryzen Threadripper PRO 5975WX,Chagall PRO,x86_64,64,32,3.6,4.5,WRX8,nanometers,7,MB,128,watts,280,2022-03-08
+Ryzen Threadripper PRO 5995WX,Chagall PRO,x86_64,128,64,2.7,4.5,WRX8,nanometers,7,MB,256,watts,280,2022-03-08
+Core i3-10105F,Comet Lake-R,x86_64,8,4,3.7,4.4,1200,nanometers,14,MB,6,watts,65,2021-03-16
+Core i3-12100F,Alder Lake-S,x86_64,8,4,3.3,4.3,1700,nanometers,10,MB,12,watts,58,2022-01-01
+Core i5-11400F,Rocket Lake,x86_64,12,6,2.6,4.4,1200,nanometers,14,MB,12,watts,65,2021-03-16
+Core i5-11600,Rocket Lake,x86_64,12,6,2.8,4.8,1200,nanometers,14,MB,12,watts,65,2021-03-16
+Core i5-11600KF,Rocket Lake,x86_64,12,6,3.9,4.9,1200,nanometers,14,MB,12,watts,125,2021-03-16
+Core i5-12400F,Alder Lake-S,x86_64,12,6,2.5,4.4,1700,nanometers,10,MB,18,watts,65,2022-01-04
+Core i5-12490F,Alder Lake-S,x86_64,12,6,3,4.6,1700,nanometers,10,MB,20,watts,65,2022
+Core i5-12600KF,Alder Lake-S,x86_64,16,10,3.7,4.9,1700,nanometers,10,MB,20,watts,125,2021-11-04
+Core i5-13600KF,Raptor Lake-S,x86_64,20,14,3.5,5.1,1700,nanometers,10,MB,24,watts,125,2022-09-27
+Core i7-11700F,Rocket Lake,x86_64,16,8,2.5,4.9,1200,nanometers,14,MB,16,watts,65,2021-03-16
+Core i7-11700KF,Rocket Lake,x86_64,16,8,3.6,5,1200,nanometers,14,MB,16,watts,125,2021-03-16
+Core i7-12700F,Alder Lake-S,x86_64,20,12,3.3,4.9,1700,nanometers,10,MB,25,watts,65,2022-01-04
+Core i7-12700KF,Alder Lake-S,x86_64,20,12,3.6,5,1700,nanometers,10,MB,25,watts,125,2021-11-04
+Core i7-13700KF,Raptor Lake-S,x86_64,24,16,3.4,5.4,1700,nanometers,10,MB,30,watts,125,2022-09-27
+Core i9-11900F,Rocket Lake,x86_64,16,8,2.5,5.2,1200,nanometers,14,MB,16,watts,65,2021-03-16
+Core i9-11900KF,Rocket Lake,x86_64,16,8,3.5,5.3,1200,nanometers,14,MB,16,watts,125,2021-03-16
+Core i9-12900F,Alder Lake-S,x86_64,24,16,2.4,5.1,1700,nanometers,10,MB,30,watts,65,2022-01-04
+Core i9-12900KF,Alder Lake-S,x86_64,24,16,3.2,5.2,1700,nanometers,10,MB,30,watts,125,2021-11-04
+Core i9-13900KF,Raptor Lake-S,x86_64,32,24,3,5.8,1700,nanometers,10,MB,36,watts,125,2022-09-27
+Xeon E-2314,Rocket Lake-E,x86_64,4,4,2.8,4.5,1200,nanometers,14,MB,8,watts,65,2021-09-08
+Xeon E-2334,Rocket Lake-E,x86_64,8,4,3.4,4.8,1200,nanometers,14,MB,8,watts,65,2021-09-08
+Xeon E-2336,Rocket Lake-E,x86_64,12,6,2.9,4.8,1200,nanometers,14,MB,12,watts,65,2021-09-08
+Xeon E-2378,Rocket Lake-E,x86_64,16,8,2.6,4.8,1200,nanometers,14,MB,16,watts,65,2021-09-08
+Xeon Gold 5315Y,Ice Lake-SP,x86_64,16,8,3.2,3.6,4189,nanometers,10,MB,12,watts,140,2021-04-06
+Xeon Gold 5317,Ice Lake-SP,x86_64,24,12,3,3.6,4189,nanometers,10,MB,18,watts,150,2021-04-06
+Xeon Gold 5318H,Cooper Lake-SP,x86_64,36,18,2.5,3.8,4189,nanometers,14,MB,24.75,watts,150,2021-04-06
+Xeon Gold 5318N,Ice Lake-SP,x86_64,48,24,2.1,3.4,4189,nanometers,10,MB,36,watts,150,2021-04-06
+Xeon Gold 5318S,Ice Lake-SP,x86_64,48,24,2.1,3.4,4189,nanometers,10,MB,36,watts,165,2021-04-06
+Xeon Gold 5318Y,Ice Lake-SP,x86_64,48,24,2.1,3.4,4189,nanometers,10,MB,36,watts,165,2021-04-06
+Xeon Gold 5320,Ice Lake-SP,x86_64,52,26,2.2,3.4,4189,nanometers,10,MB,39,watts,185,2021-04-06
+Xeon Gold 5320H,Cooper Lake-SP,x86_64,40,20,2.4,4.2,4189,nanometers,14,MB,27.5,watts,150,2021-04-06
+Xeon Gold 5320T,Ice Lake-SP,x86_64,40,20,2.3,3.5,4189,nanometers,10,MB,30,watts,150,2021-04-06
+Xeon Gold 6312U,Ice Lake-SP,x86_64,48,24,2.4,3.6,4189,nanometers,10,MB,36,watts,185,2021-04-06
+Xeon Gold 6314U,Ice Lake-SP,x86_64,64,32,2.3,3.4,4189,nanometers,10,MB,48,watts,205,2021-04-06
+Xeon Gold 6326,Ice Lake-SP,x86_64,32,16,2.9,3.5,4189,nanometers,10,MB,24,watts,185,2021-04-06
+Xeon Gold 6328H,Cooper Lake-SP,x86_64,32,16,2.8,4.3,4189,nanometers,14,MB,22,watts,165,2021-04-06
+Xeon Gold 6328HL,Cooper Lake-SP,x86_64,32,16,2.8,4.3,4189,nanometers,14,MB,22,watts,165,2021-04-06
+Xeon Gold 6330,Ice Lake-SP,x86_64,56,28,2,3.1,4189,nanometers,10,MB,42,watts,205,2021-04-06
+Xeon Gold 6330H,Cooper Lake-SP,x86_64,48,24,2,3.7,4189,nanometers,14,MB,33,watts,150,2021-04-06
+Xeon Gold 6334,Ice Lake-SP,x86_64,16,8,3.6,3.7,4189,nanometers,10,MB,18,watts,165,2021-04-06
+Xeon Gold 6336Y,Ice Lake-SP,x86_64,48,24,2.4,3.6,4189,nanometers,10,MB,36,watts,185,2021-04-06
+Xeon Gold 6338N,Ice Lake-SP,x86_64,64,32,2.2,3.5,4189,nanometers,10,MB,48,watts,185,2021-04-06
+Xeon Gold 6338T,Ice Lake-SP,x86_64,48,24,2.1,3.4,4189,nanometers,10,MB,36,watts,165,2021-04-06
+Xeon Gold 6342,Ice Lake-SP,x86_64,48,24,2.8,3.5,4189,nanometers,10,MB,36,watts,230,2021-04-06
+Xeon Gold 6346,Ice Lake-SP,x86_64,32,16,3.1,3.6,4189,nanometers,10,MB,36,watts,205,2021-04-06
+Xeon Gold 6348,Ice Lake-SP,x86_64,56,28,2.6,3.5,4189,nanometers,10,MB,42,watts,235,2021-04-06
+Xeon Gold 6348H,Cooper Lake-SP,x86_64,48,24,2.3,4.2,4189,nanometers,14,MB,33,watts,165,2021-04-06
+Xeon Gold 6354,Ice Lake-SP,x86_64,36,18,3,3.6,4189,nanometers,10,MB,39,watts,205,2021-04-06
+Xeon Platinum 8351N,Ice Lake-SP,x86_64,72,36,2.4,3.5,4189,nanometers,10,MB,54,watts,225,2021-04-06
+Xeon Platinum 8352M,Ice Lake-SP,x86_64,64,32,2.3,3.5,4189,nanometers,10,MB,48,watts,185,2021-04-06
+Xeon Platinum 8352S,Ice Lake-SP,x86_64,64,32,2.2,3.4,4189,nanometers,10,MB,48,watts,205,2021-04-06
+Xeon Platinum 8352V,Ice Lake-SP,x86_64,72,36,2.5,3.5,4189,nanometers,10,MB,54,watts,195,2021-04-06
+Xeon Platinum 8353H,Cooper Lake-SP,x86_64,36,18,2.5,3.8,4189,nanometers,14,MB,24.75,watts,150,2021-04-06
+Xeon Platinum 8354H,Cooper Lake-SP,x86_64,36,18,3.1,4.3,4189,nanometers,14,MB,24.75,watts,205,2021-04-06
+Xeon Platinum 8356H,Cooper Lake-SP,x86_64,16,8,3.9,4.4,4189,nanometers,14,MB,35.75,watts,190,2021-04-06
+Xeon Platinum 8358,Ice Lake-SP,x86_64,64,32,2.6,3.4,4189,nanometers,10,MB,48,watts,250,2021-04-06
+Xeon Platinum 8358P,Ice Lake-SP,x86_64,64,32,2.6,3.4,4189,nanometers,10,MB,48,watts,240,2021-04-06
+Xeon Platinum 8360H,Cooper Lake-SP,x86_64,48,24,3,4.2,4189,nanometers,14,MB,33,watts,225,2021-04-06
+Xeon Platinum 8360HL,Cooper Lake-SP,x86_64,48,24,3,4.2,4189,nanometers,14,MB,33,watts,225,2021-04-06
+Xeon Platinum 8360Y,Ice Lake-SP,x86_64,72,36,2.4,3.5,4189,nanometers,10,MB,54,watts,250,2021-04-06
+Xeon Platinum 8362,Ice Lake-SP,x86_64,64,32,2.8,3.6,4189,nanometers,10,MB,48,watts,265,2021-04-06
+Xeon Platinum 8368,Ice Lake-SP,x86_64,76,38,2.4,3.4,4189,nanometers,10,MB,57,watts,270,2021-04-06
+Xeon Platinum 8368Q,Ice Lake-SP,x86_64,76,38,2.6,3.7,4189,nanometers,10,MB,57,watts,270,2021-04-06
+Xeon Platinum 8376H,Cooper Lake-SP,x86_64,56,28,2.6,4.3,4189,nanometers,14,MB,38.5,watts,205,2021-04-06
+Xeon Platinum 8376HL,Cooper Lake-SP,x86_64,56,28,2.6,4.3,4189,nanometers,14,MB,38.5,watts,205,2021-04-06
+Xeon Platinum 8380,Ice Lake-SP,x86_64,80,40,2.3,3.4,4189,nanometers,10,MB,60,watts,270,2021-04-06
+Xeon Platinum 8380H,Cooper Lake-SP,x86_64,56,28,2.9,4.3,4189,nanometers,14,MB,38.5,watts,250,2021-04-06
+Xeon Platinum 8380HL,Cooper Lake-SP,x86_64,56,28,2.9,4.3,4189,nanometers,14,MB,38.5,watts,250,2021-04-06
+Xeon Silver 4309Y,Ice Lake-SP,x86_64,16,8,2.8,3.6,4189,nanometers,10,MB,12,watts,105,2021-04-06
+Xeon Silver 4310,Ice Lake-SP,x86_64,24,12,2.1,3.3,4189,nanometers,10,MB,18,watts,120,2021-04-06
+Xeon Silver 4310T,Ice Lake-SP,x86_64,20,10,2.3,3.4,4189,nanometers,10,MB,15,watts,105,2021-04-06
+Xeon Silver 4314,Ice Lake-SP,x86_64,32,16,2.4,3.4,4189,nanometers,10,MB,24,watts,135,2021-04-06
+Xeon Silver 4316,Ice Lake-SP,x86_64,40,20,2.3,3.4,4189,nanometers,10,MB,30,watts,150,2021-04-06
+Xeon W-3323,Ice Lake-W,x86_64,24,12,3.5,4,4189,nanometers,10,MB,18,watts,220,2021-07-29
+Xeon W-3335,Ice Lake-W,x86_64,32,16,3.4,4,4189,nanometers,10,MB,24,watts,250,2021-07-29
+Xeon W-3345,Ice Lake-W,x86_64,48,24,3,4,4189,nanometers,10,MB,36,watts,250,2021-07-29
+Xeon W-3365,Ice Lake-W,x86_64,64,32,2.7,4,4189,nanometers,10,MB,48,watts,270,2021-07-29
+Xeon W-3375,Ice Lake-W,x86_64,76,38,2.5,4,4189,nanometers,10,MB,57,watts,270,2021-07-29
+Ryzen 3 5125C,Cezanne-U,x86_64,4,2,3,3,FP6,nanometers,7,MB,8,watts,15,2022-05-05
+Ryzen 3 5425C,Cezanne-U,x86_64,8,4,2.7,4.1,FP6,nanometers,7,MB,8,watts,15,2022-05-05
+Ryzen 3 5425U,Barcelo,x86_64,8,4,2.7,4.1,FP6,nanometers,7,MB,8,watts,15,2022-01-06
+Ryzen 3 PRO 5475U,Cezanne-U,x86_64,8,4,2.7,4.1,FP6,nanometers,7,MB,8,watts,15,2022-04-19
+Ryzen 5 5625C,Cezanne-U,x86_64,12,6,2.3,4.3,FP6,nanometers,7,MB,16,watts,15,2022-05-05
+Ryzen 5 5625U,Barcelo,x86_64,12,6,2.3,4.3,FP6,nanometers,7,MB,16,watts,15,2022-01-06
+Ryzen 5 6600H,Rembrandt,x86_64,12,6,3.3,4.5,FP7,nanometers,6,MB,16,watts,45,2022-01-01
+Ryzen 5 6600HS,Rembrandt,x86_64,12,6,3.3,4.5,FP7,nanometers,6,MB,16,watts,35,2022-01-01
+Ryzen 5 6600U,Rembrandt,x86_64,12,6,2.9,4.5,FP7,nanometers,6,MB,16,watts,15,2022-01-01
+Ryzen 5 7600X,Raphael,x86_64,12,6,4.7,5.3,AM5,nanometers,5,MB,32,watts,105,2022-09-27
+Ryzen 5 PRO 5675U,Cezanne-U,x86_64,12,6,2.3,4.3,FP6,nanometers,7,MB,16,watts,15,2022-04-19
+Ryzen 5 PRO 6650H,Rembrandt,x86_64,12,6,3.3,4.5,FP7,nanometers,6,MB,16,watts,45,2022-04-19
+Ryzen 5 PRO 6650HS,Rembrandt,x86_64,12,6,3.3,4.5,FP7,nanometers,6,MB,16,watts,35,2022-04-19
+Ryzen 5 PRO 6650U,Rembrandt,x86_64,12,6,2.9,4.5,FP7,nanometers,6,MB,16,watts,15,2022-04-19
+Ryzen 7 5825C,Cezanne-U,x86_64,16,8,2,4.5,FP6,nanometers,7,MB,16,watts,15,2022-05-05
+Ryzen 7 5825U,Barcelo,x86_64,16,8,2,4.5,FP6,nanometers,7,MB,16,watts,15,2022-01-06
+Ryzen 7 6800H,Rembrandt,x86_64,16,8,3.2,4.7,FP7,nanometers,6,MB,16,watts,45,2022-01-01
+Ryzen 7 6800HS,Rembrandt,x86_64,16,8,3.2,4.7,FP7,nanometers,6,MB,16,watts,35,2022-01-01
+Ryzen 7 6800U,Rembrandt,x86_64,16,8,2.7,4.7,FP7,nanometers,6,MB,16,watts,15,2022-01-01
+Ryzen 7 7700X,Raphael,x86_64,16,8,4.5,5.4,AM5,nanometers,5,MB,32,watts,105,2022-09-27
+Ryzen 7 PRO 5875U,Cezanne-U,x86_64,16,8,2,4.5,FP6,nanometers,7,MB,16,watts,15,2022-04-19
+Ryzen 7 PRO 6850H,Rembrandt,x86_64,16,8,3.2,4.7,FP7,nanometers,6,MB,16,watts,45,2022-04-19
+Ryzen 7 PRO 6850HS,Rembrandt,x86_64,16,8,3.2,4.7,FP7,nanometers,6,MB,16,watts,35,2022-04-19
+Ryzen 7 PRO 6850U,Rembrandt,x86_64,16,8,2.7,4.7,FP7,nanometers,6,MB,16,watts,15,2022-04-19
+Ryzen 9 6900HS,Rembrandt,x86_64,16,8,3.3,4.9,FP7,nanometers,6,MB,16,watts,35,2022-01-01
+Ryzen 9 6900HX,Rembrandt,x86_64,16,8,3.3,4.9,FP7,nanometers,6,MB,16,watts,45,2022-01-01
+Ryzen 9 6980HS,Rembrandt,x86_64,16,8,3.3,5,FP7,nanometers,6,MB,16,watts,45,2022-01-01
+Ryzen 9 6980HX,Rembrandt,x86_64,16,8,3.3,5,FP7,nanometers,6,MB,16,watts,45,2022-01-01
+Ryzen 9 7900X,Raphael,x86_64,24,12,4.7,5.6,AM5,nanometers,5,MB,64,watts,170,2022-09-27
+Ryzen 9 7950X,Raphael,x86_64,32,16,4.5,5.7,AM5,nanometers,5,MB,64,watts,170,2022-09-27
+Ryzen 9 PRO 6950H,Rembrandt,x86_64,16,8,3.3,4.9,FP7,nanometers,6,MB,16,watts,45,2022-04-19
+Ryzen 9 PRO 6950HS,Rembrandt,x86_64,16,8,3.3,4.9,FP7,nanometers,6,MB,16,watts,35,2022-04-19
+Celeron 7300,Alder Lake-U,x86_64,6,5,1,1,BGA 1781,nanometers,10,MB,8,watts,9,2022-02-23
+Celeron 7305,Alder Lake-U,x86_64,6,5,1.1,1.1,BGA 1744,nanometers,10,MB,8,watts,15,2022-02-23
+Celeron G6900,Alder Lake-S,x86_64,2,2,3.4,3.4,1700,nanometers,10,MB,4,watts,46,2022-01-04
+Celeron G6900E,Alder Lake-S,x86_64,2,2,3,3,1700,nanometers,10,MB,4,watts,46,2022-01-04
+Celeron G6900T,Alder Lake-S,x86_64,2,2,2.8,2.8,1700,nanometers,10,MB,4,watts,35,2022-01-04
+Celeron G6900TE,Alder Lake-S,x86_64,2,2,2.4,2.4,1700,nanometers,10,MB,4,watts,35,2022-01-04
+Core i3-12100,Alder Lake-S,x86_64,8,4,3.3,4.3,1700,nanometers,10,MB,12,watts,60,2022-01-04
+Core i3-12100E,Alder Lake-S,x86_64,8,4,3.2,4.2,1700,nanometers,10,MB,12,watts,60,2022-01-04
+Core i3-12100T,Alder Lake-S,x86_64,8,4,2.2,4.1,1700,nanometers,10,MB,12,watts,35,2022-01-01
+Core i3-12100TE,Alder Lake-S,x86_64,8,4,2.1,4,1700,nanometers,10,MB,12,watts,35,2022-01-01
+Core i3-1210U,Alder Lake-U,x86_64,8,6,1,4.4,BGA 1781,nanometers,10,MB,10,watts,9,2022-02-23
+Core i3-1215U,Alder Lake-U,x86_64,8,6,1.2,4.4,BGA 1744,nanometers,10,MB,10,watts,15,2022-02-23
+Core i3-1215U (IPU),Alder Lake-U,x86_64,8,6,1.2,4.4,BGA 1744,nanometers,10,MB,10,watts,15,2022-02-23
+Core i3-1220P,Alder Lake-P,x86_64,12,10,1.5,4.4,BGA 1744,nanometers,10,MB,12,watts,28,2022-02-23
+Core i3-12300,Alder Lake-S,x86_64,8,4,3.5,4.4,1700,nanometers,10,MB,12,watts,60,2022-01-01
+Core i3-12300HE,Alder Lake-H,x86_64,12,8,1.9,4.3,BGA 1744,nanometers,10,MB,12,watts,45,2022-01-01
+Core i3-12300T,Alder Lake-S,x86_64,8,4,2.3,4.2,1700,nanometers,10,MB,12,watts,35,2022-01-01
+Core i5-1230U,Alder Lake-U,x86_64,12,10,1,4.4,BGA 1781,nanometers,10,MB,12,watts,9,2022-02-23
+Core i5-1235U,Alder Lake-U,x86_64,12,10,1.3,4.4,BGA 1744,nanometers,10,MB,12,watts,15,2022-02-23
+Core i5-1235U (IPU),Alder Lake-U,x86_64,12,10,1.3,4.4,BGA 1744,nanometers,10,MB,12,watts,15,2022-02-23
+Core i5-12400,Alder Lake-S,x86_64,12,6,2.5,4.4,1700,nanometers,10,MB,18,watts,65,2022-01-04
+Core i5-12400T,Alder Lake-S,x86_64,12,6,1.8,4.2,1700,nanometers,10,MB,18,watts,35,2022-01-01
+Core i5-1240P,Alder Lake-P,x86_64,16,12,1.7,4.4,BGA 1744,nanometers,10,MB,12,watts,28,2022-02-23
+Core i5-1240U,Alder Lake-U,x86_64,12,10,1.1,4.4,BGA 1781,nanometers,10,MB,12,watts,9,2022-02-23
+Core i5-12450H,Alder Lake-H,x86_64,12,8,2,4.4,BGA 1744,nanometers,10,MB,12,watts,45,2022-01-01
+Core i5-12450HX,Alder Lake-HX,x86_64,12,8,2.4,4.4,BGA 1964,nanometers,10,MB,12,watts,55,2022-05-10
+Core i5-1245U,Alder Lake-U,x86_64,12,10,1.6,4.4,BGA 1744,nanometers,10,MB,12,watts,15,2022-02-23
+Core i5-12500H,Alder Lake-H,x86_64,16,12,2.5,4.5,BGA 1744,nanometers,10,MB,18,watts,45,2022-01-01
+Core i5-1250P,Alder Lake-P,x86_64,16,12,1.7,4.4,BGA 1744,nanometers,10,MB,12,watts,28,2022-02-23
+Core i5-12600H,Alder Lake-H,x86_64,16,12,2.7,4.5,BGA 1744,nanometers,10,MB,18,watts,45,2022-01-01
+Core i5-12600HX,Alder Lake-HX,x86_64,16,12,2.5,4.6,BGA 1964,nanometers,10,MB,18,watts,55,2022-05-10
+Core i5-13500,Raptor Lake-S,x86_64,16,10,2.5,4.6,1700,nanometers,10,MB,20,watts,65,2022
+Core i5-13600K,Raptor Lake-S,x86_64,20,14,3.5,5.1,1700,nanometers,10,MB,24,watts,125,2022-09-27
+Core i7-1250U,Alder Lake-U,x86_64,12,10,1.1,4.7,BGA 1781,nanometers,10,MB,12,watts,9,2022-02-23
+Core i7-1255U,Alder Lake-U,x86_64,12,10,1.7,4.7,BGA 1744,nanometers,10,MB,12,watts,15,2022-02-23
+Core i7-1260P,Alder Lake-P,x86_64,16,12,2.1,4.7,BGA 1744,nanometers,10,MB,18,watts,28,2022-02-23
+Core i7-1260U,Alder Lake-U,x86_64,12,10,1.1,4.7,BGA 1781,nanometers,10,MB,12,watts,9,2022-02-23
+Core i7-12650H,Alder Lake-H,x86_64,16,10,2.3,4.7,BGA 1744,nanometers,10,MB,24,watts,45,2022-01-01
+Core i7-12650HX,Alder Lake-HX,x86_64,20,14,2,4.7,BGA 1964,nanometers,10,MB,24,watts,55,2022-05-10
+Core i7-1265U,Alder Lake-U,x86_64,12,10,1.8,4.8,BGA 1744,nanometers,10,MB,12,watts,15,2022-02-23
+Core i7-12700E,Alder Lake-S,x86_64,20,12,2.1,4.8,1700,nanometers,10,MB,25,watts,65,2022-01-01
+Core i7-12700H,Alder Lake-H,x86_64,20,14,2.3,4.7,BGA 1744,nanometers,10,MB,24,watts,45,2022-01-01
+Core i7-12700T,Alder Lake-S,x86_64,20,12,1.4,4.7,1700,nanometers,10,MB,25,watts,35,2022-01-01
+Core i7-12700TE,Alder Lake-S,x86_64,20,12,1.4,4.6,1700,nanometers,10,MB,25,watts,35,2022-01-01
+Core i7-1270P,Alder Lake-P,x86_64,16,12,2.2,4.8,BGA 1744,nanometers,10,MB,18,watts,28,2022-02-23
+Core i7-12800H,Alder Lake-H,x86_64,20,14,2.4,4.8,BGA 1744,nanometers,10,MB,24,watts,45,2022-01-01
+Core i7-12800HE,Alder Lake-H,x86_64,20,14,2.4,4.6,BGA 1744,nanometers,10,MB,24,watts,45,2022-01-01
+Core i7-12800HX,Alder Lake-HX,x86_64,24,16,2,4.8,BGA 1964,nanometers,10,MB,25,watts,55,2022-05-10
+Core i7-1280P,Alder Lake-P,x86_64,20,14,1.8,4.8,BGA 1744,nanometers,10,MB,24,watts,28,2022-02-23
+Core i7-12850HX,Alder Lake-HX,x86_64,24,16,2.1,4.8,BGA 1964,nanometers,10,MB,25,watts,55,2022-05-10
+Core i7-13700K,Raptor Lake-S,x86_64,24,16,3.4,5.4,1700,nanometers,10,MB,30,watts,125,2022-09-27
+Core i9-12900,Alder Lake-S,x86_64,24,16,2.4,5.1,1700,nanometers,10,MB,30,watts,65,2022-01-04
+Core i9-12900E,Alder Lake-S,x86_64,24,16,2.3,5,1700,nanometers,10,MB,30,watts,65,2022-01-04
+Core i9-12900H,Alder Lake-H,x86_64,20,14,2.5,5,BGA 1744,nanometers,10,MB,24,watts,45,2022-01-04
+Core i9-12900HK,Alder Lake-H,x86_64,20,14,2.5,5,BGA 1744,nanometers,10,MB,24,watts,45,2022-01-04
+Core i9-12900HX,Alder Lake-HX,x86_64,24,16,2.3,5,BGA 1964,nanometers,10,MB,30,watts,55,2022-05-10
+Core i9-12900KS,Alder Lake-S,x86_64,24,16,3.4,5.5,1700,nanometers,10,MB,30,watts,150,2022-04-05
+Core i9-12900T,Alder Lake-S,x86_64,24,16,1.4,4.9,1700,nanometers,10,MB,30,watts,35,2022-01-04
+Core i9-12900TE,Alder Lake-S,x86_64,24,16,1.1,4.8,1700,nanometers,10,MB,30,watts,35,2022-01-04
+Core i9-12950HX,Alder Lake-HX,x86_64,24,16,2.3,5,BGA 1964,nanometers,10,MB,30,watts,55,2022-05-10
+Core i9-13900,Raptor Lake-S,x86_64,32,24,2,5.6,1700,nanometers,10,MB,36,watts,125,2022
+Core i9-13900K,Raptor Lake-S,x86_64,32,24,3,5.8,1700,nanometers,10,MB,36,watts,125,2022-09-27
+Pentium 8500,Alder Lake-U,x86_64,6,5,1,4.4,BGA 1781,nanometers,10,MB,8,watts,9,2022-02-23
+Pentium 8505,Alder Lake-U,x86_64,6,5,1.2,4.4,BGA 1744,nanometers,10,MB,8,watts,15,2022-02-23
+Pentium 8505 (IPU),Alder Lake-U,x86_64,6,5,1.2,4.4,BGA 1744,nanometers,10,MB,8,watts,15,2022-02-23
+Pentium Gold G7400,Alder Lake-S,x86_64,4,2,3.7,3.7,1700,nanometers,10,MB,6,watts,46,2022-01-04
+Pentium Gold G7400E,Alder Lake-S,x86_64,4,2,3.6,3.6,1700,nanometers,10,MB,6,watts,46,2022-01-04
+Pentium Gold G7400T,Alder Lake-S,x86_64,4,2,3.1,3.1,1700,nanometers,10,MB,6,watts,35,2022-01-04
+Pentium Gold G7400TE,Alder Lake-S,x86_64,4,2,3,3,1700,nanometers,10,MB,6,watts,35,2022-01-04
