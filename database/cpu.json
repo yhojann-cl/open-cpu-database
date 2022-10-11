@@ -1,5 +1,6 @@
 {
-    "version": "1.1.0-stable",
+    "version": "1.2.2-stable",
+    "repository": "https://github.com/yhojann-cl/open-cpu-database",
     "list": {
         "x86_64": [
             {
