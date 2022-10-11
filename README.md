@@ -39,3 +39,39 @@ For each CPU item the format is:
 | `Integer` | `thermalDesignPower.value`   | Value of Thermal Design Power (usually in `watts`).   |
 | `String`  | `released`                   | Released date in `yyyy-mm-dd` format.                 |
 
+Example:
+
+```json
+{
+    "version": "0.0.0-stable",
+    "repository": "https://github.com/yhojann-cl/open-cpu-database",
+    "list": {
+        "x86_64": [
+            {
+                "name": "EPYC 7373X",
+                "codename": "Milan-X",
+                "cores": {
+                    "total": 32,
+                    "physical": 16
+                },
+                "speedGhz": {
+                    "min": 3.05,
+                    "max": 3.8
+                },
+                "socket": "SP3",
+                "size": {
+                    "measure": "nanometers",
+                    "value": 7
+                },
+                "cacheL3": {
+                    "measure": "MB",
+                    "size": 768
+                },
+                "thermalDesignPower": {
+                    "measure": "watts",
+                    "value": 240
+                },
+                "released": "2022-03-22"
+            },
+            ...
+```
