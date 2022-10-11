@@ -39,7 +39,7 @@ For each CPU item the format is:
 | `Integer` | `thermalDesignPower.value`   | Value of Thermal Design Power (usually in `watts`).         |
 | `String`  | `released`                   | Released date in `yyyy-mm-dd` format.                       |
 
-Example:
+Example of the json structure:
 
 ```json
 {
