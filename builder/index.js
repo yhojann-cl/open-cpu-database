@@ -9,6 +9,7 @@ class Builder{
         console.log('Loading main database ...');
         this.loadMainDatabase()
         .then(data => this.makeDart(data))
+        .then(data => this.makeC(data))
         .then(data => this.makeCSV(data))
         .catch(e => {
             console.log('Unable build database.');
@@ -131,7 +132,79 @@ class CPURepository {
         
         return data;
     }
-    
+
+    async makeC(data) {
+      console.log('Generating C repository project ...');
+
+      await this.deleteIfExist('../database/c/cpu.c')
+      .then(() => fs.writeFile('../database/c/cpu.c', `
+
+#define _GNU_SOURCE
+#include <stdlib.h>
+#include <string.h>
+#include "cpu.h"
+
+static const cpu_t items[] =
+{
+  ${data.list.map(item => `
+  {
+    .name = "${item.name}",
+    .codename = "${item.codename}",
+    .architecture = "${item.architecture}",
+    .cores = { .total = ${item.cores.total}, .physical = ${item.cores.physical} },
+    .speed = { .min = ${item.speedGhz.min}, .max = ${item.speedGhz.max} },
+    .socket = "${item.socket}",
+    .size = { .measure = "${item.size.measure}", .value = ${item.size.value} },
+    .cacheL3 = { .measure = "${item.cacheL3.measure}", .size = ${item.cacheL3.size} },
+    .thermalDesignPower = { .measure = "${item.thermalDesignPower.measure}", .value = ${item.thermalDesignPower.value} },
+    .released = ${(item.released != null) ? `"${item.released}"` : "NULL"}
+  }
+  `.trim()).join(',\n  ')}
+};
+
+#define NUM_CPU_ITEMS (sizeof(items) / sizeof(cpu_t))
+
+const cpu_t *cpu_find_by_fuzzy_name(char *name)
+{
+  long unsigned i;
+  for(i = 0; i < NUM_CPU_ITEMS; i++)
+    if(strcasestr(items[i].name, name) != NULL)
+      return &items[i];
+  return NULL;
+}
+
+const cpu_t *cpu_find_by_exact_name(char *name)
+{
+  long unsigned i;
+  for(i = 0; i < NUM_CPU_ITEMS; i++)
+    if(strcmp(items[i].name, name) == 0)
+      return &items[i];
+  return NULL;
+}
+
+const cpu_t *cpu_find_by_fuzzy_codename(char *codename)
+{
+  long unsigned i;
+  for(i = 0; i < NUM_CPU_ITEMS; i++)
+    if(strcasestr(items[i].codename, codename) != NULL)
+      return &items[i];
+  return NULL;
+}
+
+const cpu_t *cpu_find_by_exact_codename(char *codename)
+{
+  long unsigned i;
+  for(i = 0; i < NUM_CPU_ITEMS; i++)
+    if(strcmp(items[i].codename, codename) == 0)
+      return &items[i];
+  return NULL;
+}
+
+        `.trim(), (e) => { if(e) throw e }));
+
+        return data;
+    }
+
     async makeCSV(data){
         console.log('Generating CSV repository project ...');
         
