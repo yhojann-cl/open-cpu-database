@@ -1,3 +1,5 @@
 tests/c/example
 *.o
 .vscode/
+__pycache__/
+.mypy_cache/
