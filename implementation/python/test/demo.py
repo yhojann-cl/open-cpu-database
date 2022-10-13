@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 import sys
+import pprint
 import argparse
 
 sys.path.append('../src')
-from cpu import CPURepository
+from cpu import find_cpu_by_name
+from cpu import find_cpu_by_codename
 
 # Parse arguments
 parser = argparse.ArgumentParser()
@@ -15,15 +17,18 @@ args = parser.parse_args()
 # Call CPURepository methods
 if args.name:
 	try:
-		cpu = CPURepository.findByName(args.name)
+		cpu = find_cpu_by_name(args.name)
 	except StopIteration:
 		print(f"'{args.name}' not found in database.")
 	else:
-		print(f"'{args.name}' found in database:\n{cpu}")
+		print(f"'{args.name}' found in database:")
+		pprint.pprint(cpu)
+
 elif args.codename:
 	try:
-		cpu = CPURepository.findByCodename(args.codename)
+		cpu = find_cpu_by_codename(args.codename)
 	except StopIteration:
 		print(f"'{args.codename}' not found in database.")
 	else:
-		print(f"'{args.codename}' found in database:\n{cpu}")
+		print(f"'{args.codename}' found in database:")
+		pprint.pprint(cpu)
