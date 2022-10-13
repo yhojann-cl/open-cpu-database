@@ -1,5 +1,7 @@
-tests/c/example
-*.o
-.vscode/
+# Directories
 __pycache__/
 .mypy_cache/
+.vscode/
+
+# Files
+*.o

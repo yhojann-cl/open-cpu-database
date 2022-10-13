@@ -3,12 +3,12 @@ OTHERDIR=../../database/c
 CFLAGS=-Wall -Wextra -g
 CPPFLAGS=-I$(OTHERDIR)
 LDFLAGS=
-TARGET=example
+TARGET=demo
 
 
 all: $(TARGET)
 
-$(TARGET): example.o $(OTHERDIR)/cpu.c $(OTHERDIR)/cpu.h
+$(TARGET): demo.o $(OTHERDIR)/cpu.c $(OTHERDIR)/cpu.h
 	$(CC) -o $@ $^ $(LDFLAGS)
 
 %.o: %.c
