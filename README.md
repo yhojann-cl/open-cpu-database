@@ -81,5 +81,5 @@ Example of the json structure:
 
 ## For pull requests
 
-Add your changes to main database file located in `./database/cpu.json` only and run `./builder`
-for generated all others files. You can also create an issue to report new changes.
+Add your changes to main database file located in `./database/cpu.json` only (CI action automatically generate all other files).
+You can also create an issue to report new changes.
