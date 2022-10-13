@@ -42,7 +42,7 @@ class CPUSpeed:
   def __repr__(self) -> str:
     return f'{__class__.__name__}(min={self.min}, max={self.max})'
 
-class CPUSize(_ValueAndMeasure):
+class CPUTechnologyNode(_ValueAndMeasure):
   pass
 
 class CPUCache(_ValueAndMeasure):
@@ -58,19 +58,19 @@ class CPU():
   cores: Final[CPUCores]
   speed: Final[CPUSpeed]
   socket: Final[str]
-  size: Final[CPUSize]
+  technologyNode: Final[CPUTechnologyNode]
   cacheL3: Final[CPUCache]
   thermalDesignPower: Final[CPUThermalDesignPower]
   released: Final[Optional[str]]
 
-  def __init__(self, name: str, codename: str, architecture: str, cores: CPUCores, speed: CPUSpeed, socket: str, size: CPUSize, cacheL3: CPUCache, thermalDesignPower: CPUThermalDesignPower, released: Optional[str] = None):
+  def __init__(self, name: str, codename: str, architecture: str, cores: CPUCores, speed: CPUSpeed, socket: str, technologyNode: CPUTechnologyNode, cacheL3: CPUCache, thermalDesignPower: CPUThermalDesignPower, released: Optional[str] = None):
     self.name = name
     self.codename = codename
     self.architecture = architecture
     self.cores = cores
     self.speed = speed
     self.socket = socket
-    self.size = size
+    self.technologyNode = technologyNode
     self.cacheL3 = cacheL3
     self.thermalDesignPower = thermalDesignPower
     self.released = released
@@ -83,7 +83,7 @@ class CPU():
     f' - cores: {self.cores}\n'
     f' - speed: {self.speed}\n'
     f' - socket: {self.socket}\n'
-    f' - size: {self.size}\n'
+    f' - technologyNode: {self.technologyNode}\n'
     f' - cacheL3: {self.cacheL3}\n'
     f' - thermalDesignPower: {self.thermalDesignPower}\n'
     f' - released: {self.released if self.released else "unknown"}'
@@ -97,7 +97,7 @@ class CPU():
     f'cores={self.cores.__repr__()}, '
     f'speed={self.speed.__repr__()}, '
     f'socket={self.socket}, '
-    f'size={self.size.__repr__()}, '
+    f'technologyNode={self.technologyNode.__repr__()}, '
     f'cacheL3={self.cacheL3.__repr__()}, '
     f'thermalDesignPower={self.thermalDesignPower.__repr__()}, '
     f'released={self.released}'
@@ -113,7 +113,7 @@ class CPURepository:
       cores=CPUCores(total=32, physical=16),
       speed=CPUSpeed(min=3.05, max=3.8),
       socket='SP3',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=768),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=240),
       released='2022-03-22'
@@ -125,7 +125,7 @@ class CPURepository:
       cores=CPUCores(total=48, physical=24),
       speed=CPUSpeed(min=2.8, max=3.7),
       socket='SP3',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=768),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=240),
       released='2022-03-22'
@@ -137,7 +137,7 @@ class CPURepository:
       cores=CPUCores(total=64, physical=32),
       speed=CPUSpeed(min=2.8, max=3.7),
       socket='SP3',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=256),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=225),
       released='2021-03-15'
@@ -149,7 +149,7 @@ class CPURepository:
       cores=CPUCores(total=64, physical=32),
       speed=CPUSpeed(min=2.8, max=3.6),
       socket='SP3',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=768),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=280),
       released='2022-03-22'
@@ -161,7 +161,7 @@ class CPURepository:
       cores=CPUCores(total=64, physical=32),
       speed=CPUSpeed(min=2.95, max=4),
       socket='SP3',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=256),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=280),
       released='2021-03-15'
@@ -173,7 +173,7 @@ class CPURepository:
       cores=CPUCores(total=96, physical=48),
       speed=CPUSpeed(min=2.3, max=3.6),
       socket='SP3',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=256),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=225),
       released='2021-03-15'
@@ -185,7 +185,7 @@ class CPURepository:
       cores=CPUCores(total=112, physical=56),
       speed=CPUSpeed(min=2, max=3.5),
       socket='SP3',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=256),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=240),
       released='2021-03-15'
@@ -197,7 +197,7 @@ class CPURepository:
       cores=CPUCores(total=128, physical=64),
       speed=CPUSpeed(min=2, max=3.675),
       socket='SP3',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=256),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=225),
       released='2021-03-15'
@@ -209,7 +209,7 @@ class CPURepository:
       cores=CPUCores(total=128, physical=64),
       speed=CPUSpeed(min=2, max=3.675),
       socket='SP3',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=256),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=225),
       released='2021-03-15'
@@ -221,7 +221,7 @@ class CPURepository:
       cores=CPUCores(total=128, physical=64),
       speed=CPUSpeed(min=2.45, max=3.5),
       socket='SP3',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=256),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=280),
       released='2021-03-15'
@@ -233,7 +233,7 @@ class CPURepository:
       cores=CPUCores(total=128, physical=64),
       speed=CPUSpeed(min=2.2, max=3.5),
       socket='SP3',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=768),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=280),
       released='2022-03-22'
@@ -245,7 +245,7 @@ class CPURepository:
       cores=CPUCores(total=8, physical=4),
       speed=CPUSpeed(min=3.8, max=4),
       socket='AM4',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=8),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2022-04-04'
@@ -257,7 +257,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=6),
       speed=CPUSpeed(min=3.6, max=4.1),
       socket='AM4',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=8),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2022-04-04'
@@ -269,7 +269,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=6),
       speed=CPUSpeed(min=3.6, max=4.2),
       socket='AM4',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2022-04-04'
@@ -281,7 +281,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=6),
       speed=CPUSpeed(min=3.5, max=4.4),
       socket='AM4',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=32),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2022-04-20'
@@ -293,7 +293,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=3.4, max=4.6),
       socket='AM4',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=32),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2022-04-04'
@@ -305,7 +305,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=3.4, max=4.5),
       socket='AM4',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=96),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=105),
       released='2022-04-20'
@@ -317,7 +317,7 @@ class CPURepository:
       cores=CPUCores(total=128, physical=64),
       speed=CPUSpeed(min=2.5, max=4.45),
       socket='TRX4',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=256),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=280),
       released=None
@@ -329,7 +329,7 @@ class CPURepository:
       cores=CPUCores(total=24, physical=12),
       speed=CPUSpeed(min=4.1, max=4.5),
       socket='WRX8',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=64),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=280),
       released='2022-03-08'
@@ -341,7 +341,7 @@ class CPURepository:
       cores=CPUCores(total=32, physical=16),
       speed=CPUSpeed(min=4, max=4.5),
       socket='WRX8',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=64),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=280),
       released='2022-03-08'
@@ -353,7 +353,7 @@ class CPURepository:
       cores=CPUCores(total=48, physical=24),
       speed=CPUSpeed(min=3.8, max=4.5),
       socket='WRX8',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=128),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=280),
       released='2022-03-08'
@@ -365,7 +365,7 @@ class CPURepository:
       cores=CPUCores(total=64, physical=32),
       speed=CPUSpeed(min=3.6, max=4.5),
       socket='WRX8',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=128),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=280),
       released='2022-03-08'
@@ -377,7 +377,7 @@ class CPURepository:
       cores=CPUCores(total=128, physical=64),
       speed=CPUSpeed(min=2.7, max=4.5),
       socket='WRX8',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=256),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=280),
       released='2022-03-08'
@@ -389,7 +389,7 @@ class CPURepository:
       cores=CPUCores(total=8, physical=4),
       speed=CPUSpeed(min=3.7, max=4.4),
       socket='1200',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=6),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2021-03-16'
@@ -401,7 +401,7 @@ class CPURepository:
       cores=CPUCores(total=8, physical=4),
       speed=CPUSpeed(min=3.3, max=4.3),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=58),
       released='2022-01-01'
@@ -413,7 +413,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=6),
       speed=CPUSpeed(min=2.6, max=4.4),
       socket='1200',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2021-03-16'
@@ -425,7 +425,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=6),
       speed=CPUSpeed(min=2.8, max=4.8),
       socket='1200',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2021-03-16'
@@ -437,7 +437,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=6),
       speed=CPUSpeed(min=3.9, max=4.9),
       socket='1200',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=125),
       released='2021-03-16'
@@ -449,7 +449,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=6),
       speed=CPUSpeed(min=2.5, max=4.4),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=18),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2022-01-04'
@@ -461,7 +461,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=6),
       speed=CPUSpeed(min=3, max=4.6),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=20),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2022'
@@ -473,7 +473,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=10),
       speed=CPUSpeed(min=3.7, max=4.9),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=20),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=125),
       released='2021-11-04'
@@ -485,7 +485,7 @@ class CPURepository:
       cores=CPUCores(total=20, physical=14),
       speed=CPUSpeed(min=3.5, max=5.1),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=24),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=125),
       released='2022-09-27'
@@ -497,7 +497,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=2.5, max=4.9),
       socket='1200',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2021-03-16'
@@ -509,7 +509,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=3.6, max=5),
       socket='1200',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=125),
       released='2021-03-16'
@@ -521,7 +521,7 @@ class CPURepository:
       cores=CPUCores(total=20, physical=12),
       speed=CPUSpeed(min=3.3, max=4.9),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=25),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2022-01-04'
@@ -533,7 +533,7 @@ class CPURepository:
       cores=CPUCores(total=20, physical=12),
       speed=CPUSpeed(min=3.6, max=5),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=25),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=125),
       released='2021-11-04'
@@ -545,7 +545,7 @@ class CPURepository:
       cores=CPUCores(total=24, physical=16),
       speed=CPUSpeed(min=3.4, max=5.4),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=30),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=125),
       released='2022-09-27'
@@ -557,7 +557,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=2.5, max=5.2),
       socket='1200',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2021-03-16'
@@ -569,7 +569,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=3.5, max=5.3),
       socket='1200',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=125),
       released='2021-03-16'
@@ -581,7 +581,7 @@ class CPURepository:
       cores=CPUCores(total=24, physical=16),
       speed=CPUSpeed(min=2.4, max=5.1),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=30),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2022-01-04'
@@ -593,7 +593,7 @@ class CPURepository:
       cores=CPUCores(total=24, physical=16),
       speed=CPUSpeed(min=3.2, max=5.2),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=30),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=125),
       released='2021-11-04'
@@ -605,7 +605,7 @@ class CPURepository:
       cores=CPUCores(total=32, physical=24),
       speed=CPUSpeed(min=3, max=5.8),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=36),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=125),
       released='2022-09-27'
@@ -617,7 +617,7 @@ class CPURepository:
       cores=CPUCores(total=4, physical=4),
       speed=CPUSpeed(min=2.8, max=4.5),
       socket='1200',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=8),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2021-09-08'
@@ -629,7 +629,7 @@ class CPURepository:
       cores=CPUCores(total=8, physical=4),
       speed=CPUSpeed(min=3.4, max=4.8),
       socket='1200',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=8),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2021-09-08'
@@ -641,7 +641,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=6),
       speed=CPUSpeed(min=2.9, max=4.8),
       socket='1200',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2021-09-08'
@@ -653,7 +653,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=2.6, max=4.8),
       socket='1200',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2021-09-08'
@@ -665,7 +665,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=3.2, max=3.6),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=140),
       released='2021-04-06'
@@ -677,7 +677,7 @@ class CPURepository:
       cores=CPUCores(total=24, physical=12),
       speed=CPUSpeed(min=3, max=3.6),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=18),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=150),
       released='2021-04-06'
@@ -689,7 +689,7 @@ class CPURepository:
       cores=CPUCores(total=36, physical=18),
       speed=CPUSpeed(min=2.5, max=3.8),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=24.75),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=150),
       released='2021-04-06'
@@ -701,7 +701,7 @@ class CPURepository:
       cores=CPUCores(total=48, physical=24),
       speed=CPUSpeed(min=2.1, max=3.4),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=36),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=150),
       released='2021-04-06'
@@ -713,7 +713,7 @@ class CPURepository:
       cores=CPUCores(total=48, physical=24),
       speed=CPUSpeed(min=2.1, max=3.4),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=36),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=165),
       released='2021-04-06'
@@ -725,7 +725,7 @@ class CPURepository:
       cores=CPUCores(total=48, physical=24),
       speed=CPUSpeed(min=2.1, max=3.4),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=36),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=165),
       released='2021-04-06'
@@ -737,7 +737,7 @@ class CPURepository:
       cores=CPUCores(total=52, physical=26),
       speed=CPUSpeed(min=2.2, max=3.4),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=39),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=185),
       released='2021-04-06'
@@ -749,7 +749,7 @@ class CPURepository:
       cores=CPUCores(total=40, physical=20),
       speed=CPUSpeed(min=2.4, max=4.2),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=27.5),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=150),
       released='2021-04-06'
@@ -761,7 +761,7 @@ class CPURepository:
       cores=CPUCores(total=40, physical=20),
       speed=CPUSpeed(min=2.3, max=3.5),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=30),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=150),
       released='2021-04-06'
@@ -773,7 +773,7 @@ class CPURepository:
       cores=CPUCores(total=48, physical=24),
       speed=CPUSpeed(min=2.4, max=3.6),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=36),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=185),
       released='2021-04-06'
@@ -785,7 +785,7 @@ class CPURepository:
       cores=CPUCores(total=64, physical=32),
       speed=CPUSpeed(min=2.3, max=3.4),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=48),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=205),
       released='2021-04-06'
@@ -797,7 +797,7 @@ class CPURepository:
       cores=CPUCores(total=32, physical=16),
       speed=CPUSpeed(min=2.9, max=3.5),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=24),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=185),
       released='2021-04-06'
@@ -809,7 +809,7 @@ class CPURepository:
       cores=CPUCores(total=32, physical=16),
       speed=CPUSpeed(min=2.8, max=4.3),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=22),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=165),
       released='2021-04-06'
@@ -821,7 +821,7 @@ class CPURepository:
       cores=CPUCores(total=32, physical=16),
       speed=CPUSpeed(min=2.8, max=4.3),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=22),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=165),
       released='2021-04-06'
@@ -833,7 +833,7 @@ class CPURepository:
       cores=CPUCores(total=56, physical=28),
       speed=CPUSpeed(min=2, max=3.1),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=42),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=205),
       released='2021-04-06'
@@ -845,7 +845,7 @@ class CPURepository:
       cores=CPUCores(total=48, physical=24),
       speed=CPUSpeed(min=2, max=3.7),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=33),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=150),
       released='2021-04-06'
@@ -857,7 +857,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=3.6, max=3.7),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=18),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=165),
       released='2021-04-06'
@@ -869,7 +869,7 @@ class CPURepository:
       cores=CPUCores(total=48, physical=24),
       speed=CPUSpeed(min=2.4, max=3.6),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=36),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=185),
       released='2021-04-06'
@@ -881,7 +881,7 @@ class CPURepository:
       cores=CPUCores(total=64, physical=32),
       speed=CPUSpeed(min=2.2, max=3.5),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=48),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=185),
       released='2021-04-06'
@@ -893,7 +893,7 @@ class CPURepository:
       cores=CPUCores(total=48, physical=24),
       speed=CPUSpeed(min=2.1, max=3.4),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=36),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=165),
       released='2021-04-06'
@@ -905,7 +905,7 @@ class CPURepository:
       cores=CPUCores(total=48, physical=24),
       speed=CPUSpeed(min=2.8, max=3.5),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=36),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=230),
       released='2021-04-06'
@@ -917,7 +917,7 @@ class CPURepository:
       cores=CPUCores(total=32, physical=16),
       speed=CPUSpeed(min=3.1, max=3.6),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=36),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=205),
       released='2021-04-06'
@@ -929,7 +929,7 @@ class CPURepository:
       cores=CPUCores(total=56, physical=28),
       speed=CPUSpeed(min=2.6, max=3.5),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=42),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=235),
       released='2021-04-06'
@@ -941,7 +941,7 @@ class CPURepository:
       cores=CPUCores(total=48, physical=24),
       speed=CPUSpeed(min=2.3, max=4.2),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=33),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=165),
       released='2021-04-06'
@@ -953,7 +953,7 @@ class CPURepository:
       cores=CPUCores(total=36, physical=18),
       speed=CPUSpeed(min=3, max=3.6),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=39),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=205),
       released='2021-04-06'
@@ -965,7 +965,7 @@ class CPURepository:
       cores=CPUCores(total=72, physical=36),
       speed=CPUSpeed(min=2.4, max=3.5),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=54),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=225),
       released='2021-04-06'
@@ -977,7 +977,7 @@ class CPURepository:
       cores=CPUCores(total=64, physical=32),
       speed=CPUSpeed(min=2.3, max=3.5),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=48),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=185),
       released='2021-04-06'
@@ -989,7 +989,7 @@ class CPURepository:
       cores=CPUCores(total=64, physical=32),
       speed=CPUSpeed(min=2.2, max=3.4),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=48),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=205),
       released='2021-04-06'
@@ -1001,7 +1001,7 @@ class CPURepository:
       cores=CPUCores(total=72, physical=36),
       speed=CPUSpeed(min=2.5, max=3.5),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=54),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=195),
       released='2021-04-06'
@@ -1013,7 +1013,7 @@ class CPURepository:
       cores=CPUCores(total=36, physical=18),
       speed=CPUSpeed(min=2.5, max=3.8),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=24.75),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=150),
       released='2021-04-06'
@@ -1025,7 +1025,7 @@ class CPURepository:
       cores=CPUCores(total=36, physical=18),
       speed=CPUSpeed(min=3.1, max=4.3),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=24.75),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=205),
       released='2021-04-06'
@@ -1037,7 +1037,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=3.9, max=4.4),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=35.75),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=190),
       released='2021-04-06'
@@ -1049,7 +1049,7 @@ class CPURepository:
       cores=CPUCores(total=64, physical=32),
       speed=CPUSpeed(min=2.6, max=3.4),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=48),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=250),
       released='2021-04-06'
@@ -1061,7 +1061,7 @@ class CPURepository:
       cores=CPUCores(total=64, physical=32),
       speed=CPUSpeed(min=2.6, max=3.4),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=48),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=240),
       released='2021-04-06'
@@ -1073,7 +1073,7 @@ class CPURepository:
       cores=CPUCores(total=48, physical=24),
       speed=CPUSpeed(min=3, max=4.2),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=33),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=225),
       released='2021-04-06'
@@ -1085,7 +1085,7 @@ class CPURepository:
       cores=CPUCores(total=48, physical=24),
       speed=CPUSpeed(min=3, max=4.2),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=33),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=225),
       released='2021-04-06'
@@ -1097,7 +1097,7 @@ class CPURepository:
       cores=CPUCores(total=72, physical=36),
       speed=CPUSpeed(min=2.4, max=3.5),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=54),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=250),
       released='2021-04-06'
@@ -1109,7 +1109,7 @@ class CPURepository:
       cores=CPUCores(total=64, physical=32),
       speed=CPUSpeed(min=2.8, max=3.6),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=48),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=265),
       released='2021-04-06'
@@ -1121,7 +1121,7 @@ class CPURepository:
       cores=CPUCores(total=76, physical=38),
       speed=CPUSpeed(min=2.4, max=3.4),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=57),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=270),
       released='2021-04-06'
@@ -1133,7 +1133,7 @@ class CPURepository:
       cores=CPUCores(total=76, physical=38),
       speed=CPUSpeed(min=2.6, max=3.7),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=57),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=270),
       released='2021-04-06'
@@ -1145,7 +1145,7 @@ class CPURepository:
       cores=CPUCores(total=56, physical=28),
       speed=CPUSpeed(min=2.6, max=4.3),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=38.5),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=205),
       released='2021-04-06'
@@ -1157,7 +1157,7 @@ class CPURepository:
       cores=CPUCores(total=56, physical=28),
       speed=CPUSpeed(min=2.6, max=4.3),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=38.5),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=205),
       released='2021-04-06'
@@ -1169,7 +1169,7 @@ class CPURepository:
       cores=CPUCores(total=80, physical=40),
       speed=CPUSpeed(min=2.3, max=3.4),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=60),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=270),
       released='2021-04-06'
@@ -1181,7 +1181,7 @@ class CPURepository:
       cores=CPUCores(total=56, physical=28),
       speed=CPUSpeed(min=2.9, max=4.3),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=38.5),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=250),
       released='2021-04-06'
@@ -1193,7 +1193,7 @@ class CPURepository:
       cores=CPUCores(total=56, physical=28),
       speed=CPUSpeed(min=2.9, max=4.3),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=14),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=14),
       cacheL3=CPUCache(measure='MB', value=38.5),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=250),
       released='2021-04-06'
@@ -1205,7 +1205,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=2.8, max=3.6),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=105),
       released='2021-04-06'
@@ -1217,7 +1217,7 @@ class CPURepository:
       cores=CPUCores(total=24, physical=12),
       speed=CPUSpeed(min=2.1, max=3.3),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=18),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=120),
       released='2021-04-06'
@@ -1229,7 +1229,7 @@ class CPURepository:
       cores=CPUCores(total=20, physical=10),
       speed=CPUSpeed(min=2.3, max=3.4),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=15),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=105),
       released='2021-04-06'
@@ -1241,7 +1241,7 @@ class CPURepository:
       cores=CPUCores(total=32, physical=16),
       speed=CPUSpeed(min=2.4, max=3.4),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=24),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=135),
       released='2021-04-06'
@@ -1253,7 +1253,7 @@ class CPURepository:
       cores=CPUCores(total=40, physical=20),
       speed=CPUSpeed(min=2.3, max=3.4),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=30),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=150),
       released='2021-04-06'
@@ -1265,7 +1265,7 @@ class CPURepository:
       cores=CPUCores(total=24, physical=12),
       speed=CPUSpeed(min=3.5, max=4),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=18),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=220),
       released='2021-07-29'
@@ -1277,7 +1277,7 @@ class CPURepository:
       cores=CPUCores(total=32, physical=16),
       speed=CPUSpeed(min=3.4, max=4),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=24),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=250),
       released='2021-07-29'
@@ -1289,7 +1289,7 @@ class CPURepository:
       cores=CPUCores(total=48, physical=24),
       speed=CPUSpeed(min=3, max=4),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=36),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=250),
       released='2021-07-29'
@@ -1301,7 +1301,7 @@ class CPURepository:
       cores=CPUCores(total=64, physical=32),
       speed=CPUSpeed(min=2.7, max=4),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=48),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=270),
       released='2021-07-29'
@@ -1313,7 +1313,7 @@ class CPURepository:
       cores=CPUCores(total=76, physical=38),
       speed=CPUSpeed(min=2.5, max=4),
       socket='4189',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=57),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=270),
       released='2021-07-29'
@@ -1325,7 +1325,7 @@ class CPURepository:
       cores=CPUCores(total=4, physical=2),
       speed=CPUSpeed(min=3, max=3),
       socket='FP6',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=8),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-05-05'
@@ -1337,7 +1337,7 @@ class CPURepository:
       cores=CPUCores(total=8, physical=4),
       speed=CPUSpeed(min=2.7, max=4.1),
       socket='FP6',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=8),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-05-05'
@@ -1349,7 +1349,7 @@ class CPURepository:
       cores=CPUCores(total=8, physical=4),
       speed=CPUSpeed(min=2.7, max=4.1),
       socket='FP6',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=8),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-01-06'
@@ -1361,7 +1361,7 @@ class CPURepository:
       cores=CPUCores(total=8, physical=4),
       speed=CPUSpeed(min=2.7, max=4.1),
       socket='FP6',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=8),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-04-19'
@@ -1373,7 +1373,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=6),
       speed=CPUSpeed(min=2.3, max=4.3),
       socket='FP6',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-05-05'
@@ -1385,7 +1385,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=6),
       speed=CPUSpeed(min=2.3, max=4.3),
       socket='FP6',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-01-06'
@@ -1397,7 +1397,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=6),
       speed=CPUSpeed(min=3.3, max=4.5),
       socket='FP7',
-      size=CPUSize(measure='nanometers', value=6),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=6),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=45),
       released='2022-01-01'
@@ -1409,7 +1409,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=6),
       speed=CPUSpeed(min=3.3, max=4.5),
       socket='FP7',
-      size=CPUSize(measure='nanometers', value=6),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=6),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=35),
       released='2022-01-01'
@@ -1421,7 +1421,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=6),
       speed=CPUSpeed(min=2.9, max=4.5),
       socket='FP7',
-      size=CPUSize(measure='nanometers', value=6),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=6),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-01-01'
@@ -1433,7 +1433,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=6),
       speed=CPUSpeed(min=4.7, max=5.3),
       socket='AM5',
-      size=CPUSize(measure='nanometers', value=5),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=5),
       cacheL3=CPUCache(measure='MB', value=32),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=105),
       released='2022-09-27'
@@ -1445,7 +1445,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=6),
       speed=CPUSpeed(min=2.3, max=4.3),
       socket='FP6',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-04-19'
@@ -1457,7 +1457,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=6),
       speed=CPUSpeed(min=3.3, max=4.5),
       socket='FP7',
-      size=CPUSize(measure='nanometers', value=6),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=6),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=45),
       released='2022-04-19'
@@ -1469,7 +1469,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=6),
       speed=CPUSpeed(min=3.3, max=4.5),
       socket='FP7',
-      size=CPUSize(measure='nanometers', value=6),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=6),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=35),
       released='2022-04-19'
@@ -1481,7 +1481,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=6),
       speed=CPUSpeed(min=2.9, max=4.5),
       socket='FP7',
-      size=CPUSize(measure='nanometers', value=6),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=6),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-04-19'
@@ -1493,7 +1493,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=2, max=4.5),
       socket='FP6',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-05-05'
@@ -1505,7 +1505,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=2, max=4.5),
       socket='FP6',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-01-06'
@@ -1517,7 +1517,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=3.2, max=4.7),
       socket='FP7',
-      size=CPUSize(measure='nanometers', value=6),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=6),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=45),
       released='2022-01-01'
@@ -1529,7 +1529,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=3.2, max=4.7),
       socket='FP7',
-      size=CPUSize(measure='nanometers', value=6),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=6),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=35),
       released='2022-01-01'
@@ -1541,7 +1541,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=2.7, max=4.7),
       socket='FP7',
-      size=CPUSize(measure='nanometers', value=6),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=6),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-01-01'
@@ -1553,7 +1553,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=4.5, max=5.4),
       socket='AM5',
-      size=CPUSize(measure='nanometers', value=5),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=5),
       cacheL3=CPUCache(measure='MB', value=32),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=105),
       released='2022-09-27'
@@ -1565,7 +1565,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=2, max=4.5),
       socket='FP6',
-      size=CPUSize(measure='nanometers', value=7),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=7),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-04-19'
@@ -1577,7 +1577,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=3.2, max=4.7),
       socket='FP7',
-      size=CPUSize(measure='nanometers', value=6),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=6),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=45),
       released='2022-04-19'
@@ -1589,7 +1589,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=3.2, max=4.7),
       socket='FP7',
-      size=CPUSize(measure='nanometers', value=6),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=6),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=35),
       released='2022-04-19'
@@ -1601,7 +1601,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=2.7, max=4.7),
       socket='FP7',
-      size=CPUSize(measure='nanometers', value=6),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=6),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-04-19'
@@ -1613,7 +1613,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=3.3, max=4.9),
       socket='FP7',
-      size=CPUSize(measure='nanometers', value=6),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=6),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=35),
       released='2022-01-01'
@@ -1625,7 +1625,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=3.3, max=4.9),
       socket='FP7',
-      size=CPUSize(measure='nanometers', value=6),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=6),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=45),
       released='2022-01-01'
@@ -1637,7 +1637,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=3.3, max=5),
       socket='FP7',
-      size=CPUSize(measure='nanometers', value=6),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=6),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=45),
       released='2022-01-01'
@@ -1649,7 +1649,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=3.3, max=5),
       socket='FP7',
-      size=CPUSize(measure='nanometers', value=6),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=6),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=45),
       released='2022-01-01'
@@ -1661,7 +1661,7 @@ class CPURepository:
       cores=CPUCores(total=24, physical=12),
       speed=CPUSpeed(min=4.7, max=5.6),
       socket='AM5',
-      size=CPUSize(measure='nanometers', value=5),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=5),
       cacheL3=CPUCache(measure='MB', value=64),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=170),
       released='2022-09-27'
@@ -1673,7 +1673,7 @@ class CPURepository:
       cores=CPUCores(total=32, physical=16),
       speed=CPUSpeed(min=4.5, max=5.7),
       socket='AM5',
-      size=CPUSize(measure='nanometers', value=5),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=5),
       cacheL3=CPUCache(measure='MB', value=64),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=170),
       released='2022-09-27'
@@ -1685,7 +1685,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=3.3, max=4.9),
       socket='FP7',
-      size=CPUSize(measure='nanometers', value=6),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=6),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=45),
       released='2022-04-19'
@@ -1697,7 +1697,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=8),
       speed=CPUSpeed(min=3.3, max=4.9),
       socket='FP7',
-      size=CPUSize(measure='nanometers', value=6),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=6),
       cacheL3=CPUCache(measure='MB', value=16),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=35),
       released='2022-04-19'
@@ -1709,7 +1709,7 @@ class CPURepository:
       cores=CPUCores(total=6, physical=5),
       speed=CPUSpeed(min=1, max=1),
       socket='BGA 1781',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=8),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=9),
       released='2022-02-23'
@@ -1721,7 +1721,7 @@ class CPURepository:
       cores=CPUCores(total=6, physical=5),
       speed=CPUSpeed(min=1.1, max=1.1),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=8),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-02-23'
@@ -1733,7 +1733,7 @@ class CPURepository:
       cores=CPUCores(total=2, physical=2),
       speed=CPUSpeed(min=3.4, max=3.4),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=4),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=46),
       released='2022-01-04'
@@ -1745,7 +1745,7 @@ class CPURepository:
       cores=CPUCores(total=2, physical=2),
       speed=CPUSpeed(min=3, max=3),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=4),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=46),
       released='2022-01-04'
@@ -1757,7 +1757,7 @@ class CPURepository:
       cores=CPUCores(total=2, physical=2),
       speed=CPUSpeed(min=2.8, max=2.8),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=4),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=35),
       released='2022-01-04'
@@ -1769,7 +1769,7 @@ class CPURepository:
       cores=CPUCores(total=2, physical=2),
       speed=CPUSpeed(min=2.4, max=2.4),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=4),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=35),
       released='2022-01-04'
@@ -1781,7 +1781,7 @@ class CPURepository:
       cores=CPUCores(total=8, physical=4),
       speed=CPUSpeed(min=3.3, max=4.3),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=60),
       released='2022-01-04'
@@ -1793,7 +1793,7 @@ class CPURepository:
       cores=CPUCores(total=8, physical=4),
       speed=CPUSpeed(min=3.2, max=4.2),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=60),
       released='2022-01-04'
@@ -1805,7 +1805,7 @@ class CPURepository:
       cores=CPUCores(total=8, physical=4),
       speed=CPUSpeed(min=2.2, max=4.1),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=35),
       released='2022-01-01'
@@ -1817,7 +1817,7 @@ class CPURepository:
       cores=CPUCores(total=8, physical=4),
       speed=CPUSpeed(min=2.1, max=4),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=35),
       released='2022-01-01'
@@ -1829,7 +1829,7 @@ class CPURepository:
       cores=CPUCores(total=8, physical=6),
       speed=CPUSpeed(min=1, max=4.4),
       socket='BGA 1781',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=10),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=9),
       released='2022-02-23'
@@ -1841,7 +1841,7 @@ class CPURepository:
       cores=CPUCores(total=8, physical=6),
       speed=CPUSpeed(min=1.2, max=4.4),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=10),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-02-23'
@@ -1853,7 +1853,7 @@ class CPURepository:
       cores=CPUCores(total=8, physical=6),
       speed=CPUSpeed(min=1.2, max=4.4),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=10),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-02-23'
@@ -1865,7 +1865,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=10),
       speed=CPUSpeed(min=1.5, max=4.4),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=28),
       released='2022-02-23'
@@ -1877,7 +1877,7 @@ class CPURepository:
       cores=CPUCores(total=8, physical=4),
       speed=CPUSpeed(min=3.5, max=4.4),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=60),
       released='2022-01-01'
@@ -1889,7 +1889,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=8),
       speed=CPUSpeed(min=1.9, max=4.3),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=45),
       released='2022-01-01'
@@ -1901,7 +1901,7 @@ class CPURepository:
       cores=CPUCores(total=8, physical=4),
       speed=CPUSpeed(min=2.3, max=4.2),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=35),
       released='2022-01-01'
@@ -1913,7 +1913,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=10),
       speed=CPUSpeed(min=1, max=4.4),
       socket='BGA 1781',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=9),
       released='2022-02-23'
@@ -1925,7 +1925,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=10),
       speed=CPUSpeed(min=1.3, max=4.4),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-02-23'
@@ -1937,7 +1937,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=10),
       speed=CPUSpeed(min=1.3, max=4.4),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-02-23'
@@ -1949,7 +1949,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=6),
       speed=CPUSpeed(min=2.5, max=4.4),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=18),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2022-01-04'
@@ -1961,7 +1961,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=6),
       speed=CPUSpeed(min=1.8, max=4.2),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=18),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=35),
       released='2022-01-01'
@@ -1973,7 +1973,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=12),
       speed=CPUSpeed(min=1.7, max=4.4),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=28),
       released='2022-02-23'
@@ -1985,7 +1985,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=10),
       speed=CPUSpeed(min=1.1, max=4.4),
       socket='BGA 1781',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=9),
       released='2022-02-23'
@@ -1997,7 +1997,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=8),
       speed=CPUSpeed(min=2, max=4.4),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=45),
       released='2022-01-01'
@@ -2009,7 +2009,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=8),
       speed=CPUSpeed(min=2.4, max=4.4),
       socket='BGA 1964',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=55),
       released='2022-05-10'
@@ -2021,7 +2021,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=10),
       speed=CPUSpeed(min=1.6, max=4.4),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-02-23'
@@ -2033,7 +2033,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=12),
       speed=CPUSpeed(min=2.5, max=4.5),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=18),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=45),
       released='2022-01-01'
@@ -2045,7 +2045,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=12),
       speed=CPUSpeed(min=1.7, max=4.4),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=28),
       released='2022-02-23'
@@ -2057,7 +2057,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=12),
       speed=CPUSpeed(min=2.7, max=4.5),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=18),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=45),
       released='2022-01-01'
@@ -2069,7 +2069,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=12),
       speed=CPUSpeed(min=2.5, max=4.6),
       socket='BGA 1964',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=18),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=55),
       released='2022-05-10'
@@ -2081,7 +2081,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=10),
       speed=CPUSpeed(min=2.5, max=4.6),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=20),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2022'
@@ -2093,7 +2093,7 @@ class CPURepository:
       cores=CPUCores(total=20, physical=14),
       speed=CPUSpeed(min=3.5, max=5.1),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=24),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=125),
       released='2022-09-27'
@@ -2105,7 +2105,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=10),
       speed=CPUSpeed(min=1.1, max=4.7),
       socket='BGA 1781',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=9),
       released='2022-02-23'
@@ -2117,7 +2117,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=10),
       speed=CPUSpeed(min=1.7, max=4.7),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-02-23'
@@ -2129,7 +2129,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=12),
       speed=CPUSpeed(min=2.1, max=4.7),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=18),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=28),
       released='2022-02-23'
@@ -2141,7 +2141,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=10),
       speed=CPUSpeed(min=1.1, max=4.7),
       socket='BGA 1781',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=9),
       released='2022-02-23'
@@ -2153,7 +2153,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=10),
       speed=CPUSpeed(min=2.3, max=4.7),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=24),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=45),
       released='2022-01-01'
@@ -2165,7 +2165,7 @@ class CPURepository:
       cores=CPUCores(total=20, physical=14),
       speed=CPUSpeed(min=2, max=4.7),
       socket='BGA 1964',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=24),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=55),
       released='2022-05-10'
@@ -2177,7 +2177,7 @@ class CPURepository:
       cores=CPUCores(total=12, physical=10),
       speed=CPUSpeed(min=1.8, max=4.8),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=12),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-02-23'
@@ -2189,7 +2189,7 @@ class CPURepository:
       cores=CPUCores(total=20, physical=12),
       speed=CPUSpeed(min=2.1, max=4.8),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=25),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2022-01-01'
@@ -2201,7 +2201,7 @@ class CPURepository:
       cores=CPUCores(total=20, physical=14),
       speed=CPUSpeed(min=2.3, max=4.7),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=24),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=45),
       released='2022-01-01'
@@ -2213,7 +2213,7 @@ class CPURepository:
       cores=CPUCores(total=20, physical=12),
       speed=CPUSpeed(min=1.4, max=4.7),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=25),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=35),
       released='2022-01-01'
@@ -2225,7 +2225,7 @@ class CPURepository:
       cores=CPUCores(total=20, physical=12),
       speed=CPUSpeed(min=1.4, max=4.6),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=25),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=35),
       released='2022-01-01'
@@ -2237,7 +2237,7 @@ class CPURepository:
       cores=CPUCores(total=16, physical=12),
       speed=CPUSpeed(min=2.2, max=4.8),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=18),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=28),
       released='2022-02-23'
@@ -2249,7 +2249,7 @@ class CPURepository:
       cores=CPUCores(total=20, physical=14),
       speed=CPUSpeed(min=2.4, max=4.8),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=24),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=45),
       released='2022-01-01'
@@ -2261,7 +2261,7 @@ class CPURepository:
       cores=CPUCores(total=20, physical=14),
       speed=CPUSpeed(min=2.4, max=4.6),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=24),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=45),
       released='2022-01-01'
@@ -2273,7 +2273,7 @@ class CPURepository:
       cores=CPUCores(total=24, physical=16),
       speed=CPUSpeed(min=2, max=4.8),
       socket='BGA 1964',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=25),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=55),
       released='2022-05-10'
@@ -2285,7 +2285,7 @@ class CPURepository:
       cores=CPUCores(total=20, physical=14),
       speed=CPUSpeed(min=1.8, max=4.8),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=24),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=28),
       released='2022-02-23'
@@ -2297,7 +2297,7 @@ class CPURepository:
       cores=CPUCores(total=24, physical=16),
       speed=CPUSpeed(min=2.1, max=4.8),
       socket='BGA 1964',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=25),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=55),
       released='2022-05-10'
@@ -2309,7 +2309,7 @@ class CPURepository:
       cores=CPUCores(total=24, physical=16),
       speed=CPUSpeed(min=3.4, max=5.4),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=30),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=125),
       released='2022-09-27'
@@ -2321,7 +2321,7 @@ class CPURepository:
       cores=CPUCores(total=24, physical=16),
       speed=CPUSpeed(min=2.4, max=5.1),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=30),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2022-01-04'
@@ -2333,7 +2333,7 @@ class CPURepository:
       cores=CPUCores(total=24, physical=16),
       speed=CPUSpeed(min=2.3, max=5),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=30),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=65),
       released='2022-01-04'
@@ -2345,7 +2345,7 @@ class CPURepository:
       cores=CPUCores(total=20, physical=14),
       speed=CPUSpeed(min=2.5, max=5),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=24),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=45),
       released='2022-01-04'
@@ -2357,7 +2357,7 @@ class CPURepository:
       cores=CPUCores(total=20, physical=14),
       speed=CPUSpeed(min=2.5, max=5),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=24),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=45),
       released='2022-01-04'
@@ -2369,7 +2369,7 @@ class CPURepository:
       cores=CPUCores(total=24, physical=16),
       speed=CPUSpeed(min=2.3, max=5),
       socket='BGA 1964',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=30),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=55),
       released='2022-05-10'
@@ -2381,7 +2381,7 @@ class CPURepository:
       cores=CPUCores(total=24, physical=16),
       speed=CPUSpeed(min=3.4, max=5.5),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=30),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=150),
       released='2022-04-05'
@@ -2393,7 +2393,7 @@ class CPURepository:
       cores=CPUCores(total=24, physical=16),
       speed=CPUSpeed(min=1.4, max=4.9),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=30),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=35),
       released='2022-01-04'
@@ -2405,7 +2405,7 @@ class CPURepository:
       cores=CPUCores(total=24, physical=16),
       speed=CPUSpeed(min=1.1, max=4.8),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=30),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=35),
       released='2022-01-04'
@@ -2417,7 +2417,7 @@ class CPURepository:
       cores=CPUCores(total=24, physical=16),
       speed=CPUSpeed(min=2.3, max=5),
       socket='BGA 1964',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=30),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=55),
       released='2022-05-10'
@@ -2429,7 +2429,7 @@ class CPURepository:
       cores=CPUCores(total=32, physical=24),
       speed=CPUSpeed(min=2, max=5.6),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=36),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=125),
       released='2022'
@@ -2441,7 +2441,7 @@ class CPURepository:
       cores=CPUCores(total=32, physical=24),
       speed=CPUSpeed(min=3, max=5.8),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=36),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=125),
       released='2022-09-27'
@@ -2453,7 +2453,7 @@ class CPURepository:
       cores=CPUCores(total=6, physical=5),
       speed=CPUSpeed(min=1, max=4.4),
       socket='BGA 1781',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=8),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=9),
       released='2022-02-23'
@@ -2465,7 +2465,7 @@ class CPURepository:
       cores=CPUCores(total=6, physical=5),
       speed=CPUSpeed(min=1.2, max=4.4),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=8),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-02-23'
@@ -2477,7 +2477,7 @@ class CPURepository:
       cores=CPUCores(total=6, physical=5),
       speed=CPUSpeed(min=1.2, max=4.4),
       socket='BGA 1744',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=8),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=15),
       released='2022-02-23'
@@ -2489,7 +2489,7 @@ class CPURepository:
       cores=CPUCores(total=4, physical=2),
       speed=CPUSpeed(min=3.7, max=3.7),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=6),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=46),
       released='2022-01-04'
@@ -2501,7 +2501,7 @@ class CPURepository:
       cores=CPUCores(total=4, physical=2),
       speed=CPUSpeed(min=3.6, max=3.6),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=6),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=46),
       released='2022-01-04'
@@ -2513,7 +2513,7 @@ class CPURepository:
       cores=CPUCores(total=4, physical=2),
       speed=CPUSpeed(min=3.1, max=3.1),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=6),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=35),
       released='2022-01-04'
@@ -2525,7 +2525,7 @@ class CPURepository:
       cores=CPUCores(total=4, physical=2),
       speed=CPUSpeed(min=3, max=3),
       socket='1700',
-      size=CPUSize(measure='nanometers', value=10),
+      technologyNode=CPUTechnologyNode(measure='nanometers', value=10),
       cacheL3=CPUCache(measure='MB', value=6),
       thermalDesignPower=CPUThermalDesignPower(measure='watts', value=35),
       released='2022-01-04'

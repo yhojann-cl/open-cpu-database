@@ -16,24 +16,23 @@ In json format the root data is:
 
 For each CPU item the format is:
 
-| Data type | Key name                     | Description                                                 |
-|-----------|------------------------------|-------------------------------------------------------------|
-| `String`  | `name`                       | Full name of the CPU model.                                 |
-| `String`  | `codename`                   | Codename of the CPU.                                        |
-| `String`  | `architecture`               | Architecture of the CPU, by example `x86_64`.               |
-| `Integer` | `cores.total`                | Total of cores (physical and virtual).                      |
-| `Integer` | `cores.physical`             | Total of physical cores.                                    |
-| `Float`   | `speedGhz.min`               | Minimal speed in Ghz.                                       |
-| `Float`   | `speedGhz.max`               | Maximum speed in Ghz.                                       |
-| `String`  | `socket`                     | Physical socket model type.                                 | 
-| `Integer` | `size`                       | Size of the physical CPU.                                   |
-| `String`  | `size.measure`               | Measure of the size of CPU (usually in `nanometers`).       |
-| `Integer` | `size.value`                 | Value of the size of CPU (usually in `nanometers`).         |
-| `String`  | `cacheL3.measure`            | Measure of size of Level 3 Cache (usually in `KB` or `MB`). |
-| `Float`   | `cacheL3.size`               | Size of Level 3 Cache.                                      |
-| `String`  | `thermalDesignPower.measure` | Measure of Thermal Design Power (usually in `watts`).       | 
-| `Integer` | `thermalDesignPower.value`   | Value of Thermal Design Power (usually in `watts`).         |
-| `String`  | `released`                   | Released date in `yyyy-mm-dd` format.                       |
+| Data type | Key name                     | Description                                                          |
+|-----------|------------------------------|----------------------------------------------------------------------|
+| `String`  | `name`                       | Full name of the CPU model.                                          |
+| `String`  | `codename`                   | Codename of the CPU.                                                 |
+| `String`  | `architecture`               | Architecture of the CPU, by example `x86_64`.                        |
+| `Integer` | `cores.total`                | Total of cores (physical and virtual).                               |
+| `Integer` | `cores.physical`             | Total of physical cores.                                             |
+| `Float`   | `speedGhz.min`               | Minimal speed in Ghz.                                                |
+| `Float`   | `speedGhz.max`               | Maximum speed in Ghz.                                                |
+| `String`  | `socket`                     | Physical socket model type.                                          | 
+| `String`  | `technologyNode.measure`     | Measure of the technology node of CPU (usually in `nanometers`).     |
+| `Integer` | `technologyNode.value`       | Value of the technology node of CPU.                                 |
+| `String`  | `cacheL3.measure`            | Measure of size of Level 3 Cache (usually in `KB` or `MB`).          |
+| `Float`   | `cacheL3.size`               | Size of Level 3 Cache.                                               |
+| `String`  | `thermalDesignPower.measure` | Measure of Thermal Design Power (usually in `watts`).                | 
+| `Integer` | `thermalDesignPower.value`   | Value of Thermal Design Power (usually in `watts`).                  |
+| `String`  | `released`                   | Released date in `yyyy-mm-dd` format.                                |
 
 Example of the json structure:
 
@@ -55,7 +54,7 @@ Example of the json structure:
                 "max": 3.8
             },
             "socket": "SP3",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },

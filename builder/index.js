@@ -49,11 +49,11 @@ class CPUSpeed {
   const CPUSpeed({ required this.min, required this.max });
 }
 
-class CPUSize {
+class CPUTechnologyNode {
   final String measure;
   final double value;
 
-  const CPUSize({ required this.measure, required this.value });
+  const CPUTechnologyNode({ required this.measure, required this.value });
 }
 
 class CPUCache {
@@ -77,7 +77,7 @@ class CPU {
   final CPUCores cores;
   final CPUSpeed speed;
   final String socket;
-  final CPUSize size;
+  final CPUTechnologyNode technologyNode;
   final CPUCache cacheL3;
   final CPUThermalDesignPower thermalDesignPower;
   final DateTime? released;
@@ -89,7 +89,7 @@ class CPU {
     required this.cores,
     required this.speed,
     required this.socket,
-    required this.size,
+    required this.technologyNode,
     required this.cacheL3,
     required this.thermalDesignPower,
     required this.released
@@ -110,7 +110,7 @@ class CPURepository {
       cores: const CPUCores(total: ${item.cores.total}, physical: ${item.cores.physical}),
       speed: const CPUSpeed(min: ${item.speedGhz.min}, max: ${item.speedGhz.max}),
       socket: '${item.socket}',
-      size: const CPUSize(measure: '${item.size.measure}', value: ${item.size.value}),
+      technologyNode: const CPUTechnologyNode(measure: '${item.technologyNode.measure}', value: ${item.technologyNode.value}),
       cacheL3: const CPUCache(measure: '${item.cacheL3.measure}', size: ${item.cacheL3.size}),
       thermalDesignPower: const CPUThermalDesignPower(measure: '${item.thermalDesignPower.measure}', value: ${item.thermalDesignPower.value}),
       released: ${(item.released != null) ? `DateTime.parse('${item.released}')` : `null`}
@@ -155,7 +155,7 @@ static const cpu_t items[] =
     .cores = { .total = ${item.cores.total}, .physical = ${item.cores.physical} },
     .speed = { .min = ${item.speedGhz.min}, .max = ${item.speedGhz.max} },
     .socket = "${item.socket}",
-    .size = { .measure = "${item.size.measure}", .value = ${item.size.value} },
+    .technologyNode = { .measure = "${item.technologyNode.measure}", .value = ${item.technologyNode.value} },
     .cacheL3 = { .measure = "${item.cacheL3.measure}", .size = ${item.cacheL3.size} },
     .thermalDesignPower = { .measure = "${item.thermalDesignPower.measure}", .value = ${item.thermalDesignPower.value} },
     .released = ${(item.released != null) ? `"${item.released}"` : "NULL"}
@@ -256,7 +256,7 @@ class CPUSpeed:
   def __repr__(self) -> str:
     return f'{__class__.__name__}(min={self.min}, max={self.max})'
 
-class CPUSize(_ValueAndMeasure):
+class CPUTechnologyNode(_ValueAndMeasure):
   pass
 
 class CPUCache(_ValueAndMeasure):
@@ -272,19 +272,19 @@ class CPU():
   cores: Final[CPUCores]
   speed: Final[CPUSpeed]
   socket: Final[str]
-  size: Final[CPUSize]
+  technologyNode: Final[CPUTechnologyNode]
   cacheL3: Final[CPUCache]
   thermalDesignPower: Final[CPUThermalDesignPower]
   released: Final[Optional[str]]
 
-  def __init__(self, name: str, codename: str, architecture: str, cores: CPUCores, speed: CPUSpeed, socket: str, size: CPUSize, cacheL3: CPUCache, thermalDesignPower: CPUThermalDesignPower, released: Optional[str] = None):
+  def __init__(self, name: str, codename: str, architecture: str, cores: CPUCores, speed: CPUSpeed, socket: str, technologyNode: CPUTechnologyNode, cacheL3: CPUCache, thermalDesignPower: CPUThermalDesignPower, released: Optional[str] = None):
     self.name = name
     self.codename = codename
     self.architecture = architecture
     self.cores = cores
     self.speed = speed
     self.socket = socket
-    self.size = size
+    self.technologyNode = technologyNode
     self.cacheL3 = cacheL3
     self.thermalDesignPower = thermalDesignPower
     self.released = released
@@ -297,7 +297,7 @@ class CPU():
     f' - cores: {self.cores}\\n'
     f' - speed: {self.speed}\\n'
     f' - socket: {self.socket}\\n'
-    f' - size: {self.size}\\n'
+    f' - technologyNode: {self.technologyNode}\\n'
     f' - cacheL3: {self.cacheL3}\\n'
     f' - thermalDesignPower: {self.thermalDesignPower}\\n'
     f' - released: {self.released if self.released else "unknown"}'
@@ -311,7 +311,7 @@ class CPU():
     f'cores={self.cores.__repr__()}, '
     f'speed={self.speed.__repr__()}, '
     f'socket={self.socket}, '
-    f'size={self.size.__repr__()}, '
+    f'technologyNode={self.technologyNode.__repr__()}, '
     f'cacheL3={self.cacheL3.__repr__()}, '
     f'thermalDesignPower={self.thermalDesignPower.__repr__()}, '
     f'released={self.released}'
@@ -328,7 +328,7 @@ class CPURepository:
       cores=CPUCores(total=${item.cores.total}, physical=${item.cores.physical}),
       speed=CPUSpeed(min=${item.speedGhz.min}, max=${item.speedGhz.max}),
       socket='${item.socket}',
-      size=CPUSize(measure='${item.size.measure}', value=${item.size.value}),
+      technologyNode=CPUTechnologyNode(measure='${item.technologyNode.measure}', value=${item.technologyNode.value}),
       cacheL3=CPUCache(measure='${item.cacheL3.measure}', value=${item.cacheL3.size}),
       thermalDesignPower=CPUThermalDesignPower(measure='${item.thermalDesignPower.measure}', value=${item.thermalDesignPower.value}),
       released=${(item.released != null) ? `'${item.released}'` : `None`}
@@ -364,8 +364,8 @@ class CPURepository:
             speedGzMin: item.speedGhz.min,
             speedGzMax: item.speedGhz.max,
             socket: item.socket,
-            sizeMeasure: item.size.measure,
-            sizeValue: item.size.value,
+            technologyNodeMeasure: item.technologyNode.measure,
+            technologyNodeValue: item.technologyNode.value,
             cacheL3Measure: item.cacheL3.measure,
             cacheL3Size: item.cacheL3.size,
             thermalDesignPowerMeasure: item.thermalDesignPower.measure,

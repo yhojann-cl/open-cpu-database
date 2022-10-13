@@ -15,7 +15,7 @@
                 "max": 3.8
             },
             "socket": "SP3",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -42,7 +42,7 @@
                 "max": 3.7
             },
             "socket": "SP3",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -69,7 +69,7 @@
                 "max": 3.7
             },
             "socket": "SP3",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -96,7 +96,7 @@
                 "max": 3.6
             },
             "socket": "SP3",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -123,7 +123,7 @@
                 "max": 4
             },
             "socket": "SP3",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -150,7 +150,7 @@
                 "max": 3.6
             },
             "socket": "SP3",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -177,7 +177,7 @@
                 "max": 3.5
             },
             "socket": "SP3",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -204,7 +204,7 @@
                 "max": 3.675
             },
             "socket": "SP3",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -231,7 +231,7 @@
                 "max": 3.675
             },
             "socket": "SP3",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -258,7 +258,7 @@
                 "max": 3.5
             },
             "socket": "SP3",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -285,7 +285,7 @@
                 "max": 3.5
             },
             "socket": "SP3",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -312,7 +312,7 @@
                 "max": 4
             },
             "socket": "AM4",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -339,7 +339,7 @@
                 "max": 4.1
             },
             "socket": "AM4",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -366,7 +366,7 @@
                 "max": 4.2
             },
             "socket": "AM4",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -393,7 +393,7 @@
                 "max": 4.4
             },
             "socket": "AM4",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -420,7 +420,7 @@
                 "max": 4.6
             },
             "socket": "AM4",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -447,7 +447,7 @@
                 "max": 4.5
             },
             "socket": "AM4",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -474,7 +474,7 @@
                 "max": 4.45
             },
             "socket": "TRX4",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -501,7 +501,7 @@
                 "max": 4.5
             },
             "socket": "WRX8",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -528,7 +528,7 @@
                 "max": 4.5
             },
             "socket": "WRX8",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -555,7 +555,7 @@
                 "max": 4.5
             },
             "socket": "WRX8",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -582,7 +582,7 @@
                 "max": 4.5
             },
             "socket": "WRX8",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -609,7 +609,7 @@
                 "max": 4.5
             },
             "socket": "WRX8",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -636,7 +636,7 @@
                 "max": 4.4
             },
             "socket": "1200",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -663,7 +663,7 @@
                 "max": 4.3
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -690,7 +690,7 @@
                 "max": 4.4
             },
             "socket": "1200",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -717,7 +717,7 @@
                 "max": 4.8
             },
             "socket": "1200",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -744,7 +744,7 @@
                 "max": 4.9
             },
             "socket": "1200",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -771,7 +771,7 @@
                 "max": 4.4
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -798,7 +798,7 @@
                 "max": 4.6
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -825,7 +825,7 @@
                 "max": 4.9
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -852,7 +852,7 @@
                 "max": 5.1
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -879,7 +879,7 @@
                 "max": 4.9
             },
             "socket": "1200",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -906,7 +906,7 @@
                 "max": 5
             },
             "socket": "1200",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -933,7 +933,7 @@
                 "max": 4.9
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -960,7 +960,7 @@
                 "max": 5
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -987,7 +987,7 @@
                 "max": 5.4
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1014,7 +1014,7 @@
                 "max": 5.2
             },
             "socket": "1200",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -1041,7 +1041,7 @@
                 "max": 5.3
             },
             "socket": "1200",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -1068,7 +1068,7 @@
                 "max": 5.1
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1095,7 +1095,7 @@
                 "max": 5.2
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1122,7 +1122,7 @@
                 "max": 5.8
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1149,7 +1149,7 @@
                 "max": 4.5
             },
             "socket": "1200",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -1176,7 +1176,7 @@
                 "max": 4.8
             },
             "socket": "1200",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -1203,7 +1203,7 @@
                 "max": 4.8
             },
             "socket": "1200",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -1230,7 +1230,7 @@
                 "max": 4.8
             },
             "socket": "1200",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -1257,7 +1257,7 @@
                 "max": 3.6
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1284,7 +1284,7 @@
                 "max": 3.6
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1311,7 +1311,7 @@
                 "max": 3.8
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -1338,7 +1338,7 @@
                 "max": 3.4
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1365,7 +1365,7 @@
                 "max": 3.4
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1392,7 +1392,7 @@
                 "max": 3.4
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1419,7 +1419,7 @@
                 "max": 3.4
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1446,7 +1446,7 @@
                 "max": 4.2
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -1473,7 +1473,7 @@
                 "max": 3.5
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1500,7 +1500,7 @@
                 "max": 3.6
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1527,7 +1527,7 @@
                 "max": 3.4
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1554,7 +1554,7 @@
                 "max": 3.5
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1581,7 +1581,7 @@
                 "max": 4.3
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -1608,7 +1608,7 @@
                 "max": 4.3
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -1635,7 +1635,7 @@
                 "max": 3.1
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1662,7 +1662,7 @@
                 "max": 3.7
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -1689,7 +1689,7 @@
                 "max": 3.7
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1716,7 +1716,7 @@
                 "max": 3.6
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1743,7 +1743,7 @@
                 "max": 3.5
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1770,7 +1770,7 @@
                 "max": 3.4
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1797,7 +1797,7 @@
                 "max": 3.5
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1824,7 +1824,7 @@
                 "max": 3.6
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1851,7 +1851,7 @@
                 "max": 3.5
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1878,7 +1878,7 @@
                 "max": 4.2
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -1905,7 +1905,7 @@
                 "max": 3.6
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1932,7 +1932,7 @@
                 "max": 3.5
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1959,7 +1959,7 @@
                 "max": 3.5
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -1986,7 +1986,7 @@
                 "max": 3.4
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -2013,7 +2013,7 @@
                 "max": 3.5
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -2040,7 +2040,7 @@
                 "max": 3.8
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -2067,7 +2067,7 @@
                 "max": 4.3
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -2094,7 +2094,7 @@
                 "max": 4.4
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -2121,7 +2121,7 @@
                 "max": 3.4
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -2148,7 +2148,7 @@
                 "max": 3.4
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -2175,7 +2175,7 @@
                 "max": 4.2
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -2202,7 +2202,7 @@
                 "max": 4.2
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -2229,7 +2229,7 @@
                 "max": 3.5
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -2256,7 +2256,7 @@
                 "max": 3.6
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -2283,7 +2283,7 @@
                 "max": 3.4
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -2310,7 +2310,7 @@
                 "max": 3.7
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -2337,7 +2337,7 @@
                 "max": 4.3
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -2364,7 +2364,7 @@
                 "max": 4.3
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -2391,7 +2391,7 @@
                 "max": 3.4
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -2418,7 +2418,7 @@
                 "max": 4.3
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -2445,7 +2445,7 @@
                 "max": 4.3
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 14
             },
@@ -2472,7 +2472,7 @@
                 "max": 3.6
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -2499,7 +2499,7 @@
                 "max": 3.3
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -2526,7 +2526,7 @@
                 "max": 3.4
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -2553,7 +2553,7 @@
                 "max": 3.4
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -2580,7 +2580,7 @@
                 "max": 3.4
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -2607,7 +2607,7 @@
                 "max": 4
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -2634,7 +2634,7 @@
                 "max": 4
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -2661,7 +2661,7 @@
                 "max": 4
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -2688,7 +2688,7 @@
                 "max": 4
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -2715,7 +2715,7 @@
                 "max": 4
             },
             "socket": "4189",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -2742,7 +2742,7 @@
                 "max": 3
             },
             "socket": "FP6",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -2769,7 +2769,7 @@
                 "max": 4.1
             },
             "socket": "FP6",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -2796,7 +2796,7 @@
                 "max": 4.1
             },
             "socket": "FP6",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -2823,7 +2823,7 @@
                 "max": 4.1
             },
             "socket": "FP6",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -2850,7 +2850,7 @@
                 "max": 4.3
             },
             "socket": "FP6",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -2877,7 +2877,7 @@
                 "max": 4.3
             },
             "socket": "FP6",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -2904,7 +2904,7 @@
                 "max": 4.5
             },
             "socket": "FP7",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 6
             },
@@ -2931,7 +2931,7 @@
                 "max": 4.5
             },
             "socket": "FP7",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 6
             },
@@ -2958,7 +2958,7 @@
                 "max": 4.5
             },
             "socket": "FP7",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 6
             },
@@ -2985,7 +2985,7 @@
                 "max": 5.3
             },
             "socket": "AM5",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 5
             },
@@ -3012,7 +3012,7 @@
                 "max": 4.3
             },
             "socket": "FP6",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -3039,7 +3039,7 @@
                 "max": 4.5
             },
             "socket": "FP7",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 6
             },
@@ -3066,7 +3066,7 @@
                 "max": 4.5
             },
             "socket": "FP7",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 6
             },
@@ -3093,7 +3093,7 @@
                 "max": 4.5
             },
             "socket": "FP7",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 6
             },
@@ -3120,7 +3120,7 @@
                 "max": 4.5
             },
             "socket": "FP6",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -3147,7 +3147,7 @@
                 "max": 4.5
             },
             "socket": "FP6",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -3174,7 +3174,7 @@
                 "max": 4.7
             },
             "socket": "FP7",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 6
             },
@@ -3201,7 +3201,7 @@
                 "max": 4.7
             },
             "socket": "FP7",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 6
             },
@@ -3228,7 +3228,7 @@
                 "max": 4.7
             },
             "socket": "FP7",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 6
             },
@@ -3255,7 +3255,7 @@
                 "max": 5.4
             },
             "socket": "AM5",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 5
             },
@@ -3282,7 +3282,7 @@
                 "max": 4.5
             },
             "socket": "FP6",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 7
             },
@@ -3309,7 +3309,7 @@
                 "max": 4.7
             },
             "socket": "FP7",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 6
             },
@@ -3336,7 +3336,7 @@
                 "max": 4.7
             },
             "socket": "FP7",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 6
             },
@@ -3363,7 +3363,7 @@
                 "max": 4.7
             },
             "socket": "FP7",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 6
             },
@@ -3390,7 +3390,7 @@
                 "max": 4.9
             },
             "socket": "FP7",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 6
             },
@@ -3417,7 +3417,7 @@
                 "max": 4.9
             },
             "socket": "FP7",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 6
             },
@@ -3444,7 +3444,7 @@
                 "max": 5
             },
             "socket": "FP7",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 6
             },
@@ -3471,7 +3471,7 @@
                 "max": 5
             },
             "socket": "FP7",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 6
             },
@@ -3498,7 +3498,7 @@
                 "max": 5.6
             },
             "socket": "AM5",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 5
             },
@@ -3525,7 +3525,7 @@
                 "max": 5.7
             },
             "socket": "AM5",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 5
             },
@@ -3552,7 +3552,7 @@
                 "max": 4.9
             },
             "socket": "FP7",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 6
             },
@@ -3579,7 +3579,7 @@
                 "max": 4.9
             },
             "socket": "FP7",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 6
             },
@@ -3606,7 +3606,7 @@
                 "max": 1
             },
             "socket": "BGA 1781",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -3633,7 +3633,7 @@
                 "max": 1.1
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -3660,7 +3660,7 @@
                 "max": 3.4
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -3687,7 +3687,7 @@
                 "max": 3
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -3714,7 +3714,7 @@
                 "max": 2.8
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -3741,7 +3741,7 @@
                 "max": 2.4
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -3768,7 +3768,7 @@
                 "max": 4.3
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -3795,7 +3795,7 @@
                 "max": 4.2
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -3822,7 +3822,7 @@
                 "max": 4.1
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -3849,7 +3849,7 @@
                 "max": 4
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -3876,7 +3876,7 @@
                 "max": 4.4
             },
             "socket": "BGA 1781",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -3903,7 +3903,7 @@
                 "max": 4.4
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -3930,7 +3930,7 @@
                 "max": 4.4
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -3957,7 +3957,7 @@
                 "max": 4.4
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -3984,7 +3984,7 @@
                 "max": 4.4
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4011,7 +4011,7 @@
                 "max": 4.3
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4038,7 +4038,7 @@
                 "max": 4.2
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4065,7 +4065,7 @@
                 "max": 4.4
             },
             "socket": "BGA 1781",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4092,7 +4092,7 @@
                 "max": 4.4
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4119,7 +4119,7 @@
                 "max": 4.4
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4146,7 +4146,7 @@
                 "max": 4.4
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4173,7 +4173,7 @@
                 "max": 4.2
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4200,7 +4200,7 @@
                 "max": 4.4
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4227,7 +4227,7 @@
                 "max": 4.4
             },
             "socket": "BGA 1781",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4254,7 +4254,7 @@
                 "max": 4.4
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4281,7 +4281,7 @@
                 "max": 4.4
             },
             "socket": "BGA 1964",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4308,7 +4308,7 @@
                 "max": 4.4
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4335,7 +4335,7 @@
                 "max": 4.5
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4362,7 +4362,7 @@
                 "max": 4.4
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4389,7 +4389,7 @@
                 "max": 4.5
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4416,7 +4416,7 @@
                 "max": 4.6
             },
             "socket": "BGA 1964",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4443,7 +4443,7 @@
                 "max": 4.6
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4470,7 +4470,7 @@
                 "max": 5.1
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4497,7 +4497,7 @@
                 "max": 4.7
             },
             "socket": "BGA 1781",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4524,7 +4524,7 @@
                 "max": 4.7
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4551,7 +4551,7 @@
                 "max": 4.7
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4578,7 +4578,7 @@
                 "max": 4.7
             },
             "socket": "BGA 1781",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4605,7 +4605,7 @@
                 "max": 4.7
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4632,7 +4632,7 @@
                 "max": 4.7
             },
             "socket": "BGA 1964",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4659,7 +4659,7 @@
                 "max": 4.8
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4686,7 +4686,7 @@
                 "max": 4.8
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4713,7 +4713,7 @@
                 "max": 4.7
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4740,7 +4740,7 @@
                 "max": 4.7
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4767,7 +4767,7 @@
                 "max": 4.6
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4794,7 +4794,7 @@
                 "max": 4.8
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4821,7 +4821,7 @@
                 "max": 4.8
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4848,7 +4848,7 @@
                 "max": 4.6
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4875,7 +4875,7 @@
                 "max": 4.8
             },
             "socket": "BGA 1964",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4902,7 +4902,7 @@
                 "max": 4.8
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4929,7 +4929,7 @@
                 "max": 4.8
             },
             "socket": "BGA 1964",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4956,7 +4956,7 @@
                 "max": 5.4
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -4983,7 +4983,7 @@
                 "max": 5.1
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -5010,7 +5010,7 @@
                 "max": 5
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -5037,7 +5037,7 @@
                 "max": 5
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -5064,7 +5064,7 @@
                 "max": 5
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -5091,7 +5091,7 @@
                 "max": 5
             },
             "socket": "BGA 1964",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -5118,7 +5118,7 @@
                 "max": 5.5
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -5145,7 +5145,7 @@
                 "max": 4.9
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -5172,7 +5172,7 @@
                 "max": 4.8
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -5199,7 +5199,7 @@
                 "max": 5
             },
             "socket": "BGA 1964",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -5226,7 +5226,7 @@
                 "max": 5.6
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -5253,7 +5253,7 @@
                 "max": 5.8
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -5280,7 +5280,7 @@
                 "max": 4.4
             },
             "socket": "BGA 1781",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -5307,7 +5307,7 @@
                 "max": 4.4
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -5334,7 +5334,7 @@
                 "max": 4.4
             },
             "socket": "BGA 1744",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -5361,7 +5361,7 @@
                 "max": 3.7
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -5388,7 +5388,7 @@
                 "max": 3.6
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -5415,7 +5415,7 @@
                 "max": 3.1
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
@@ -5442,7 +5442,7 @@
                 "max": 3
             },
             "socket": "1700",
-            "size": {
+            "technologyNode": {
                 "measure": "nanometers",
                 "value": 10
             },
