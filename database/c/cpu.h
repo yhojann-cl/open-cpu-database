@@ -17,19 +17,19 @@ typedef struct
 
 typedef struct
 {
-  const char *const measure;
+  const char *const unit;
   const double value;
-} cpu_size_t;
+} cpu_technology_node_t;
 
 typedef struct
 {
-  const char *const measure;
+  const char *const unit;
   const double size;
 } cpu_cache_t;
 
 typedef struct
 {
-  const char *const measure;
+  const char *const unit;
   const double value;
 } cpu_thermal_design_power_t;
 
@@ -41,7 +41,7 @@ typedef struct
   const cpu_cores_t cores;
   const cpu_speed_t speed;
   const char *const socket;
-  const cpu_size_t size;
+  const cpu_technology_node_t technologyNode;
   const cpu_cache_t cacheL3;
   const cpu_thermal_design_power_t thermalDesignPower;
   const char *const released;

@@ -1,4 +1,4 @@
-name,codename,architecture,coresTotal,coresPhysical,speedGzMin,speedGzMax,socket,sizeMeasure,sizeValue,cacheL3Measure,cacheL3Size,thermalDesignPowerMeasure,thermalDesignPowerValue,released
+name,codename,architecture,coresTotal,coresPhysical,speedGzMin,speedGzMax,socket,technologyNodeUnit,technologyNodeValue,cacheL3Unit,cacheL3Size,thermalDesignPowerUnit,thermalDesignPowerValue,released
 EPYC 7373X,Milan-X,x86_64,32,16,3.05,3.8,SP3,nanometers,7,MB,768,watts,240,2022-03-22
 EPYC 7473X,Milan-X,x86_64,48,24,2.8,3.7,SP3,nanometers,7,MB,768,watts,240,2022-03-22
 EPYC 7543,Milan,x86_64,64,32,2.8,3.7,SP3,nanometers,7,MB,256,watts,225,2021-03-15

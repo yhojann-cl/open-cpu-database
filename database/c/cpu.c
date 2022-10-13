@@ -12,9 +12,9 @@ static const cpu_t items[] =
     .cores = { .total = 32, .physical = 16 },
     .speed = { .min = 3.05, .max = 3.8 },
     .socket = "SP3",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 768 },
-    .thermalDesignPower = { .measure = "watts", .value = 240 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 768 },
+    .thermalDesignPower = { .unit = "watts", .value = 240 },
     .released = "2022-03-22"
   },
   {
@@ -24,9 +24,9 @@ static const cpu_t items[] =
     .cores = { .total = 48, .physical = 24 },
     .speed = { .min = 2.8, .max = 3.7 },
     .socket = "SP3",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 768 },
-    .thermalDesignPower = { .measure = "watts", .value = 240 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 768 },
+    .thermalDesignPower = { .unit = "watts", .value = 240 },
     .released = "2022-03-22"
   },
   {
@@ -36,9 +36,9 @@ static const cpu_t items[] =
     .cores = { .total = 64, .physical = 32 },
     .speed = { .min = 2.8, .max = 3.7 },
     .socket = "SP3",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 256 },
-    .thermalDesignPower = { .measure = "watts", .value = 225 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 256 },
+    .thermalDesignPower = { .unit = "watts", .value = 225 },
     .released = "2021-03-15"
   },
   {
@@ -48,9 +48,9 @@ static const cpu_t items[] =
     .cores = { .total = 64, .physical = 32 },
     .speed = { .min = 2.8, .max = 3.6 },
     .socket = "SP3",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 768 },
-    .thermalDesignPower = { .measure = "watts", .value = 280 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 768 },
+    .thermalDesignPower = { .unit = "watts", .value = 280 },
     .released = "2022-03-22"
   },
   {
@@ -60,9 +60,9 @@ static const cpu_t items[] =
     .cores = { .total = 64, .physical = 32 },
     .speed = { .min = 2.95, .max = 4 },
     .socket = "SP3",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 256 },
-    .thermalDesignPower = { .measure = "watts", .value = 280 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 256 },
+    .thermalDesignPower = { .unit = "watts", .value = 280 },
     .released = "2021-03-15"
   },
   {
@@ -72,9 +72,9 @@ static const cpu_t items[] =
     .cores = { .total = 96, .physical = 48 },
     .speed = { .min = 2.3, .max = 3.6 },
     .socket = "SP3",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 256 },
-    .thermalDesignPower = { .measure = "watts", .value = 225 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 256 },
+    .thermalDesignPower = { .unit = "watts", .value = 225 },
     .released = "2021-03-15"
   },
   {
@@ -84,9 +84,9 @@ static const cpu_t items[] =
     .cores = { .total = 112, .physical = 56 },
     .speed = { .min = 2, .max = 3.5 },
     .socket = "SP3",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 256 },
-    .thermalDesignPower = { .measure = "watts", .value = 240 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 256 },
+    .thermalDesignPower = { .unit = "watts", .value = 240 },
     .released = "2021-03-15"
   },
   {
@@ -96,9 +96,9 @@ static const cpu_t items[] =
     .cores = { .total = 128, .physical = 64 },
     .speed = { .min = 2, .max = 3.675 },
     .socket = "SP3",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 256 },
-    .thermalDesignPower = { .measure = "watts", .value = 225 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 256 },
+    .thermalDesignPower = { .unit = "watts", .value = 225 },
     .released = "2021-03-15"
   },
   {
@@ -108,9 +108,9 @@ static const cpu_t items[] =
     .cores = { .total = 128, .physical = 64 },
     .speed = { .min = 2, .max = 3.675 },
     .socket = "SP3",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 256 },
-    .thermalDesignPower = { .measure = "watts", .value = 225 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 256 },
+    .thermalDesignPower = { .unit = "watts", .value = 225 },
     .released = "2021-03-15"
   },
   {
@@ -120,9 +120,9 @@ static const cpu_t items[] =
     .cores = { .total = 128, .physical = 64 },
     .speed = { .min = 2.45, .max = 3.5 },
     .socket = "SP3",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 256 },
-    .thermalDesignPower = { .measure = "watts", .value = 280 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 256 },
+    .thermalDesignPower = { .unit = "watts", .value = 280 },
     .released = "2021-03-15"
   },
   {
@@ -132,9 +132,9 @@ static const cpu_t items[] =
     .cores = { .total = 128, .physical = 64 },
     .speed = { .min = 2.2, .max = 3.5 },
     .socket = "SP3",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 768 },
-    .thermalDesignPower = { .measure = "watts", .value = 280 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 768 },
+    .thermalDesignPower = { .unit = "watts", .value = 280 },
     .released = "2022-03-22"
   },
   {
@@ -144,9 +144,9 @@ static const cpu_t items[] =
     .cores = { .total = 8, .physical = 4 },
     .speed = { .min = 3.8, .max = 4 },
     .socket = "AM4",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 8 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 8 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2022-04-04"
   },
   {
@@ -156,9 +156,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 6 },
     .speed = { .min = 3.6, .max = 4.1 },
     .socket = "AM4",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 8 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 8 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2022-04-04"
   },
   {
@@ -168,9 +168,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 6 },
     .speed = { .min = 3.6, .max = 4.2 },
     .socket = "AM4",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2022-04-04"
   },
   {
@@ -180,9 +180,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 6 },
     .speed = { .min = 3.5, .max = 4.4 },
     .socket = "AM4",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 32 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 32 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2022-04-20"
   },
   {
@@ -192,9 +192,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 3.4, .max = 4.6 },
     .socket = "AM4",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 32 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 32 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2022-04-04"
   },
   {
@@ -204,9 +204,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 3.4, .max = 4.5 },
     .socket = "AM4",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 96 },
-    .thermalDesignPower = { .measure = "watts", .value = 105 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 96 },
+    .thermalDesignPower = { .unit = "watts", .value = 105 },
     .released = "2022-04-20"
   },
   {
@@ -216,9 +216,9 @@ static const cpu_t items[] =
     .cores = { .total = 128, .physical = 64 },
     .speed = { .min = 2.5, .max = 4.45 },
     .socket = "TRX4",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 256 },
-    .thermalDesignPower = { .measure = "watts", .value = 280 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 256 },
+    .thermalDesignPower = { .unit = "watts", .value = 280 },
     .released = NULL
   },
   {
@@ -228,9 +228,9 @@ static const cpu_t items[] =
     .cores = { .total = 24, .physical = 12 },
     .speed = { .min = 4.1, .max = 4.5 },
     .socket = "WRX8",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 64 },
-    .thermalDesignPower = { .measure = "watts", .value = 280 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 64 },
+    .thermalDesignPower = { .unit = "watts", .value = 280 },
     .released = "2022-03-08"
   },
   {
@@ -240,9 +240,9 @@ static const cpu_t items[] =
     .cores = { .total = 32, .physical = 16 },
     .speed = { .min = 4, .max = 4.5 },
     .socket = "WRX8",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 64 },
-    .thermalDesignPower = { .measure = "watts", .value = 280 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 64 },
+    .thermalDesignPower = { .unit = "watts", .value = 280 },
     .released = "2022-03-08"
   },
   {
@@ -252,9 +252,9 @@ static const cpu_t items[] =
     .cores = { .total = 48, .physical = 24 },
     .speed = { .min = 3.8, .max = 4.5 },
     .socket = "WRX8",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 128 },
-    .thermalDesignPower = { .measure = "watts", .value = 280 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 128 },
+    .thermalDesignPower = { .unit = "watts", .value = 280 },
     .released = "2022-03-08"
   },
   {
@@ -264,9 +264,9 @@ static const cpu_t items[] =
     .cores = { .total = 64, .physical = 32 },
     .speed = { .min = 3.6, .max = 4.5 },
     .socket = "WRX8",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 128 },
-    .thermalDesignPower = { .measure = "watts", .value = 280 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 128 },
+    .thermalDesignPower = { .unit = "watts", .value = 280 },
     .released = "2022-03-08"
   },
   {
@@ -276,9 +276,9 @@ static const cpu_t items[] =
     .cores = { .total = 128, .physical = 64 },
     .speed = { .min = 2.7, .max = 4.5 },
     .socket = "WRX8",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 256 },
-    .thermalDesignPower = { .measure = "watts", .value = 280 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 256 },
+    .thermalDesignPower = { .unit = "watts", .value = 280 },
     .released = "2022-03-08"
   },
   {
@@ -288,9 +288,9 @@ static const cpu_t items[] =
     .cores = { .total = 8, .physical = 4 },
     .speed = { .min = 3.7, .max = 4.4 },
     .socket = "1200",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 6 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 6 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2021-03-16"
   },
   {
@@ -300,9 +300,9 @@ static const cpu_t items[] =
     .cores = { .total = 8, .physical = 4 },
     .speed = { .min = 3.3, .max = 4.3 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 58 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 58 },
     .released = "2022-01-01"
   },
   {
@@ -312,9 +312,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 6 },
     .speed = { .min = 2.6, .max = 4.4 },
     .socket = "1200",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2021-03-16"
   },
   {
@@ -324,9 +324,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 6 },
     .speed = { .min = 2.8, .max = 4.8 },
     .socket = "1200",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2021-03-16"
   },
   {
@@ -336,9 +336,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 6 },
     .speed = { .min = 3.9, .max = 4.9 },
     .socket = "1200",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 125 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 125 },
     .released = "2021-03-16"
   },
   {
@@ -348,9 +348,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 6 },
     .speed = { .min = 2.5, .max = 4.4 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 18 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 18 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2022-01-04"
   },
   {
@@ -360,9 +360,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 6 },
     .speed = { .min = 3, .max = 4.6 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 20 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 20 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2022"
   },
   {
@@ -372,9 +372,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 10 },
     .speed = { .min = 3.7, .max = 4.9 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 20 },
-    .thermalDesignPower = { .measure = "watts", .value = 125 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 20 },
+    .thermalDesignPower = { .unit = "watts", .value = 125 },
     .released = "2021-11-04"
   },
   {
@@ -384,9 +384,9 @@ static const cpu_t items[] =
     .cores = { .total = 20, .physical = 14 },
     .speed = { .min = 3.5, .max = 5.1 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 24 },
-    .thermalDesignPower = { .measure = "watts", .value = 125 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 24 },
+    .thermalDesignPower = { .unit = "watts", .value = 125 },
     .released = "2022-09-27"
   },
   {
@@ -396,9 +396,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 2.5, .max = 4.9 },
     .socket = "1200",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2021-03-16"
   },
   {
@@ -408,9 +408,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 3.6, .max = 5 },
     .socket = "1200",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 125 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 125 },
     .released = "2021-03-16"
   },
   {
@@ -420,9 +420,9 @@ static const cpu_t items[] =
     .cores = { .total = 20, .physical = 12 },
     .speed = { .min = 3.3, .max = 4.9 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 25 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 25 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2022-01-04"
   },
   {
@@ -432,9 +432,9 @@ static const cpu_t items[] =
     .cores = { .total = 20, .physical = 12 },
     .speed = { .min = 3.6, .max = 5 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 25 },
-    .thermalDesignPower = { .measure = "watts", .value = 125 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 25 },
+    .thermalDesignPower = { .unit = "watts", .value = 125 },
     .released = "2021-11-04"
   },
   {
@@ -444,9 +444,9 @@ static const cpu_t items[] =
     .cores = { .total = 24, .physical = 16 },
     .speed = { .min = 3.4, .max = 5.4 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 30 },
-    .thermalDesignPower = { .measure = "watts", .value = 125 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 30 },
+    .thermalDesignPower = { .unit = "watts", .value = 125 },
     .released = "2022-09-27"
   },
   {
@@ -456,9 +456,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 2.5, .max = 5.2 },
     .socket = "1200",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2021-03-16"
   },
   {
@@ -468,9 +468,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 3.5, .max = 5.3 },
     .socket = "1200",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 125 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 125 },
     .released = "2021-03-16"
   },
   {
@@ -480,9 +480,9 @@ static const cpu_t items[] =
     .cores = { .total = 24, .physical = 16 },
     .speed = { .min = 2.4, .max = 5.1 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 30 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 30 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2022-01-04"
   },
   {
@@ -492,9 +492,9 @@ static const cpu_t items[] =
     .cores = { .total = 24, .physical = 16 },
     .speed = { .min = 3.2, .max = 5.2 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 30 },
-    .thermalDesignPower = { .measure = "watts", .value = 125 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 30 },
+    .thermalDesignPower = { .unit = "watts", .value = 125 },
     .released = "2021-11-04"
   },
   {
@@ -504,9 +504,9 @@ static const cpu_t items[] =
     .cores = { .total = 32, .physical = 24 },
     .speed = { .min = 3, .max = 5.8 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 36 },
-    .thermalDesignPower = { .measure = "watts", .value = 125 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 36 },
+    .thermalDesignPower = { .unit = "watts", .value = 125 },
     .released = "2022-09-27"
   },
   {
@@ -516,9 +516,9 @@ static const cpu_t items[] =
     .cores = { .total = 4, .physical = 4 },
     .speed = { .min = 2.8, .max = 4.5 },
     .socket = "1200",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 8 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 8 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2021-09-08"
   },
   {
@@ -528,9 +528,9 @@ static const cpu_t items[] =
     .cores = { .total = 8, .physical = 4 },
     .speed = { .min = 3.4, .max = 4.8 },
     .socket = "1200",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 8 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 8 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2021-09-08"
   },
   {
@@ -540,9 +540,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 6 },
     .speed = { .min = 2.9, .max = 4.8 },
     .socket = "1200",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2021-09-08"
   },
   {
@@ -552,9 +552,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 2.6, .max = 4.8 },
     .socket = "1200",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2021-09-08"
   },
   {
@@ -564,9 +564,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 3.2, .max = 3.6 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 140 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 140 },
     .released = "2021-04-06"
   },
   {
@@ -576,9 +576,9 @@ static const cpu_t items[] =
     .cores = { .total = 24, .physical = 12 },
     .speed = { .min = 3, .max = 3.6 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 18 },
-    .thermalDesignPower = { .measure = "watts", .value = 150 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 18 },
+    .thermalDesignPower = { .unit = "watts", .value = 150 },
     .released = "2021-04-06"
   },
   {
@@ -588,9 +588,9 @@ static const cpu_t items[] =
     .cores = { .total = 36, .physical = 18 },
     .speed = { .min = 2.5, .max = 3.8 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 24.75 },
-    .thermalDesignPower = { .measure = "watts", .value = 150 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 24.75 },
+    .thermalDesignPower = { .unit = "watts", .value = 150 },
     .released = "2021-04-06"
   },
   {
@@ -600,9 +600,9 @@ static const cpu_t items[] =
     .cores = { .total = 48, .physical = 24 },
     .speed = { .min = 2.1, .max = 3.4 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 36 },
-    .thermalDesignPower = { .measure = "watts", .value = 150 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 36 },
+    .thermalDesignPower = { .unit = "watts", .value = 150 },
     .released = "2021-04-06"
   },
   {
@@ -612,9 +612,9 @@ static const cpu_t items[] =
     .cores = { .total = 48, .physical = 24 },
     .speed = { .min = 2.1, .max = 3.4 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 36 },
-    .thermalDesignPower = { .measure = "watts", .value = 165 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 36 },
+    .thermalDesignPower = { .unit = "watts", .value = 165 },
     .released = "2021-04-06"
   },
   {
@@ -624,9 +624,9 @@ static const cpu_t items[] =
     .cores = { .total = 48, .physical = 24 },
     .speed = { .min = 2.1, .max = 3.4 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 36 },
-    .thermalDesignPower = { .measure = "watts", .value = 165 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 36 },
+    .thermalDesignPower = { .unit = "watts", .value = 165 },
     .released = "2021-04-06"
   },
   {
@@ -636,9 +636,9 @@ static const cpu_t items[] =
     .cores = { .total = 52, .physical = 26 },
     .speed = { .min = 2.2, .max = 3.4 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 39 },
-    .thermalDesignPower = { .measure = "watts", .value = 185 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 39 },
+    .thermalDesignPower = { .unit = "watts", .value = 185 },
     .released = "2021-04-06"
   },
   {
@@ -648,9 +648,9 @@ static const cpu_t items[] =
     .cores = { .total = 40, .physical = 20 },
     .speed = { .min = 2.4, .max = 4.2 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 27.5 },
-    .thermalDesignPower = { .measure = "watts", .value = 150 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 27.5 },
+    .thermalDesignPower = { .unit = "watts", .value = 150 },
     .released = "2021-04-06"
   },
   {
@@ -660,9 +660,9 @@ static const cpu_t items[] =
     .cores = { .total = 40, .physical = 20 },
     .speed = { .min = 2.3, .max = 3.5 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 30 },
-    .thermalDesignPower = { .measure = "watts", .value = 150 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 30 },
+    .thermalDesignPower = { .unit = "watts", .value = 150 },
     .released = "2021-04-06"
   },
   {
@@ -672,9 +672,9 @@ static const cpu_t items[] =
     .cores = { .total = 48, .physical = 24 },
     .speed = { .min = 2.4, .max = 3.6 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 36 },
-    .thermalDesignPower = { .measure = "watts", .value = 185 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 36 },
+    .thermalDesignPower = { .unit = "watts", .value = 185 },
     .released = "2021-04-06"
   },
   {
@@ -684,9 +684,9 @@ static const cpu_t items[] =
     .cores = { .total = 64, .physical = 32 },
     .speed = { .min = 2.3, .max = 3.4 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 48 },
-    .thermalDesignPower = { .measure = "watts", .value = 205 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 48 },
+    .thermalDesignPower = { .unit = "watts", .value = 205 },
     .released = "2021-04-06"
   },
   {
@@ -696,9 +696,9 @@ static const cpu_t items[] =
     .cores = { .total = 32, .physical = 16 },
     .speed = { .min = 2.9, .max = 3.5 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 24 },
-    .thermalDesignPower = { .measure = "watts", .value = 185 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 24 },
+    .thermalDesignPower = { .unit = "watts", .value = 185 },
     .released = "2021-04-06"
   },
   {
@@ -708,9 +708,9 @@ static const cpu_t items[] =
     .cores = { .total = 32, .physical = 16 },
     .speed = { .min = 2.8, .max = 4.3 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 22 },
-    .thermalDesignPower = { .measure = "watts", .value = 165 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 22 },
+    .thermalDesignPower = { .unit = "watts", .value = 165 },
     .released = "2021-04-06"
   },
   {
@@ -720,9 +720,9 @@ static const cpu_t items[] =
     .cores = { .total = 32, .physical = 16 },
     .speed = { .min = 2.8, .max = 4.3 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 22 },
-    .thermalDesignPower = { .measure = "watts", .value = 165 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 22 },
+    .thermalDesignPower = { .unit = "watts", .value = 165 },
     .released = "2021-04-06"
   },
   {
@@ -732,9 +732,9 @@ static const cpu_t items[] =
     .cores = { .total = 56, .physical = 28 },
     .speed = { .min = 2, .max = 3.1 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 42 },
-    .thermalDesignPower = { .measure = "watts", .value = 205 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 42 },
+    .thermalDesignPower = { .unit = "watts", .value = 205 },
     .released = "2021-04-06"
   },
   {
@@ -744,9 +744,9 @@ static const cpu_t items[] =
     .cores = { .total = 48, .physical = 24 },
     .speed = { .min = 2, .max = 3.7 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 33 },
-    .thermalDesignPower = { .measure = "watts", .value = 150 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 33 },
+    .thermalDesignPower = { .unit = "watts", .value = 150 },
     .released = "2021-04-06"
   },
   {
@@ -756,9 +756,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 3.6, .max = 3.7 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 18 },
-    .thermalDesignPower = { .measure = "watts", .value = 165 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 18 },
+    .thermalDesignPower = { .unit = "watts", .value = 165 },
     .released = "2021-04-06"
   },
   {
@@ -768,9 +768,9 @@ static const cpu_t items[] =
     .cores = { .total = 48, .physical = 24 },
     .speed = { .min = 2.4, .max = 3.6 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 36 },
-    .thermalDesignPower = { .measure = "watts", .value = 185 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 36 },
+    .thermalDesignPower = { .unit = "watts", .value = 185 },
     .released = "2021-04-06"
   },
   {
@@ -780,9 +780,9 @@ static const cpu_t items[] =
     .cores = { .total = 64, .physical = 32 },
     .speed = { .min = 2.2, .max = 3.5 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 48 },
-    .thermalDesignPower = { .measure = "watts", .value = 185 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 48 },
+    .thermalDesignPower = { .unit = "watts", .value = 185 },
     .released = "2021-04-06"
   },
   {
@@ -792,9 +792,9 @@ static const cpu_t items[] =
     .cores = { .total = 48, .physical = 24 },
     .speed = { .min = 2.1, .max = 3.4 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 36 },
-    .thermalDesignPower = { .measure = "watts", .value = 165 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 36 },
+    .thermalDesignPower = { .unit = "watts", .value = 165 },
     .released = "2021-04-06"
   },
   {
@@ -804,9 +804,9 @@ static const cpu_t items[] =
     .cores = { .total = 48, .physical = 24 },
     .speed = { .min = 2.8, .max = 3.5 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 36 },
-    .thermalDesignPower = { .measure = "watts", .value = 230 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 36 },
+    .thermalDesignPower = { .unit = "watts", .value = 230 },
     .released = "2021-04-06"
   },
   {
@@ -816,9 +816,9 @@ static const cpu_t items[] =
     .cores = { .total = 32, .physical = 16 },
     .speed = { .min = 3.1, .max = 3.6 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 36 },
-    .thermalDesignPower = { .measure = "watts", .value = 205 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 36 },
+    .thermalDesignPower = { .unit = "watts", .value = 205 },
     .released = "2021-04-06"
   },
   {
@@ -828,9 +828,9 @@ static const cpu_t items[] =
     .cores = { .total = 56, .physical = 28 },
     .speed = { .min = 2.6, .max = 3.5 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 42 },
-    .thermalDesignPower = { .measure = "watts", .value = 235 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 42 },
+    .thermalDesignPower = { .unit = "watts", .value = 235 },
     .released = "2021-04-06"
   },
   {
@@ -840,9 +840,9 @@ static const cpu_t items[] =
     .cores = { .total = 48, .physical = 24 },
     .speed = { .min = 2.3, .max = 4.2 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 33 },
-    .thermalDesignPower = { .measure = "watts", .value = 165 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 33 },
+    .thermalDesignPower = { .unit = "watts", .value = 165 },
     .released = "2021-04-06"
   },
   {
@@ -852,9 +852,9 @@ static const cpu_t items[] =
     .cores = { .total = 36, .physical = 18 },
     .speed = { .min = 3, .max = 3.6 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 39 },
-    .thermalDesignPower = { .measure = "watts", .value = 205 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 39 },
+    .thermalDesignPower = { .unit = "watts", .value = 205 },
     .released = "2021-04-06"
   },
   {
@@ -864,9 +864,9 @@ static const cpu_t items[] =
     .cores = { .total = 72, .physical = 36 },
     .speed = { .min = 2.4, .max = 3.5 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 54 },
-    .thermalDesignPower = { .measure = "watts", .value = 225 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 54 },
+    .thermalDesignPower = { .unit = "watts", .value = 225 },
     .released = "2021-04-06"
   },
   {
@@ -876,9 +876,9 @@ static const cpu_t items[] =
     .cores = { .total = 64, .physical = 32 },
     .speed = { .min = 2.3, .max = 3.5 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 48 },
-    .thermalDesignPower = { .measure = "watts", .value = 185 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 48 },
+    .thermalDesignPower = { .unit = "watts", .value = 185 },
     .released = "2021-04-06"
   },
   {
@@ -888,9 +888,9 @@ static const cpu_t items[] =
     .cores = { .total = 64, .physical = 32 },
     .speed = { .min = 2.2, .max = 3.4 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 48 },
-    .thermalDesignPower = { .measure = "watts", .value = 205 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 48 },
+    .thermalDesignPower = { .unit = "watts", .value = 205 },
     .released = "2021-04-06"
   },
   {
@@ -900,9 +900,9 @@ static const cpu_t items[] =
     .cores = { .total = 72, .physical = 36 },
     .speed = { .min = 2.5, .max = 3.5 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 54 },
-    .thermalDesignPower = { .measure = "watts", .value = 195 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 54 },
+    .thermalDesignPower = { .unit = "watts", .value = 195 },
     .released = "2021-04-06"
   },
   {
@@ -912,9 +912,9 @@ static const cpu_t items[] =
     .cores = { .total = 36, .physical = 18 },
     .speed = { .min = 2.5, .max = 3.8 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 24.75 },
-    .thermalDesignPower = { .measure = "watts", .value = 150 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 24.75 },
+    .thermalDesignPower = { .unit = "watts", .value = 150 },
     .released = "2021-04-06"
   },
   {
@@ -924,9 +924,9 @@ static const cpu_t items[] =
     .cores = { .total = 36, .physical = 18 },
     .speed = { .min = 3.1, .max = 4.3 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 24.75 },
-    .thermalDesignPower = { .measure = "watts", .value = 205 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 24.75 },
+    .thermalDesignPower = { .unit = "watts", .value = 205 },
     .released = "2021-04-06"
   },
   {
@@ -936,9 +936,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 3.9, .max = 4.4 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 35.75 },
-    .thermalDesignPower = { .measure = "watts", .value = 190 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 35.75 },
+    .thermalDesignPower = { .unit = "watts", .value = 190 },
     .released = "2021-04-06"
   },
   {
@@ -948,9 +948,9 @@ static const cpu_t items[] =
     .cores = { .total = 64, .physical = 32 },
     .speed = { .min = 2.6, .max = 3.4 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 48 },
-    .thermalDesignPower = { .measure = "watts", .value = 250 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 48 },
+    .thermalDesignPower = { .unit = "watts", .value = 250 },
     .released = "2021-04-06"
   },
   {
@@ -960,9 +960,9 @@ static const cpu_t items[] =
     .cores = { .total = 64, .physical = 32 },
     .speed = { .min = 2.6, .max = 3.4 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 48 },
-    .thermalDesignPower = { .measure = "watts", .value = 240 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 48 },
+    .thermalDesignPower = { .unit = "watts", .value = 240 },
     .released = "2021-04-06"
   },
   {
@@ -972,9 +972,9 @@ static const cpu_t items[] =
     .cores = { .total = 48, .physical = 24 },
     .speed = { .min = 3, .max = 4.2 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 33 },
-    .thermalDesignPower = { .measure = "watts", .value = 225 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 33 },
+    .thermalDesignPower = { .unit = "watts", .value = 225 },
     .released = "2021-04-06"
   },
   {
@@ -984,9 +984,9 @@ static const cpu_t items[] =
     .cores = { .total = 48, .physical = 24 },
     .speed = { .min = 3, .max = 4.2 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 33 },
-    .thermalDesignPower = { .measure = "watts", .value = 225 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 33 },
+    .thermalDesignPower = { .unit = "watts", .value = 225 },
     .released = "2021-04-06"
   },
   {
@@ -996,9 +996,9 @@ static const cpu_t items[] =
     .cores = { .total = 72, .physical = 36 },
     .speed = { .min = 2.4, .max = 3.5 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 54 },
-    .thermalDesignPower = { .measure = "watts", .value = 250 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 54 },
+    .thermalDesignPower = { .unit = "watts", .value = 250 },
     .released = "2021-04-06"
   },
   {
@@ -1008,9 +1008,9 @@ static const cpu_t items[] =
     .cores = { .total = 64, .physical = 32 },
     .speed = { .min = 2.8, .max = 3.6 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 48 },
-    .thermalDesignPower = { .measure = "watts", .value = 265 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 48 },
+    .thermalDesignPower = { .unit = "watts", .value = 265 },
     .released = "2021-04-06"
   },
   {
@@ -1020,9 +1020,9 @@ static const cpu_t items[] =
     .cores = { .total = 76, .physical = 38 },
     .speed = { .min = 2.4, .max = 3.4 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 57 },
-    .thermalDesignPower = { .measure = "watts", .value = 270 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 57 },
+    .thermalDesignPower = { .unit = "watts", .value = 270 },
     .released = "2021-04-06"
   },
   {
@@ -1032,9 +1032,9 @@ static const cpu_t items[] =
     .cores = { .total = 76, .physical = 38 },
     .speed = { .min = 2.6, .max = 3.7 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 57 },
-    .thermalDesignPower = { .measure = "watts", .value = 270 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 57 },
+    .thermalDesignPower = { .unit = "watts", .value = 270 },
     .released = "2021-04-06"
   },
   {
@@ -1044,9 +1044,9 @@ static const cpu_t items[] =
     .cores = { .total = 56, .physical = 28 },
     .speed = { .min = 2.6, .max = 4.3 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 38.5 },
-    .thermalDesignPower = { .measure = "watts", .value = 205 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 38.5 },
+    .thermalDesignPower = { .unit = "watts", .value = 205 },
     .released = "2021-04-06"
   },
   {
@@ -1056,9 +1056,9 @@ static const cpu_t items[] =
     .cores = { .total = 56, .physical = 28 },
     .speed = { .min = 2.6, .max = 4.3 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 38.5 },
-    .thermalDesignPower = { .measure = "watts", .value = 205 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 38.5 },
+    .thermalDesignPower = { .unit = "watts", .value = 205 },
     .released = "2021-04-06"
   },
   {
@@ -1068,9 +1068,9 @@ static const cpu_t items[] =
     .cores = { .total = 80, .physical = 40 },
     .speed = { .min = 2.3, .max = 3.4 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 60 },
-    .thermalDesignPower = { .measure = "watts", .value = 270 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 60 },
+    .thermalDesignPower = { .unit = "watts", .value = 270 },
     .released = "2021-04-06"
   },
   {
@@ -1080,9 +1080,9 @@ static const cpu_t items[] =
     .cores = { .total = 56, .physical = 28 },
     .speed = { .min = 2.9, .max = 4.3 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 38.5 },
-    .thermalDesignPower = { .measure = "watts", .value = 250 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 38.5 },
+    .thermalDesignPower = { .unit = "watts", .value = 250 },
     .released = "2021-04-06"
   },
   {
@@ -1092,9 +1092,9 @@ static const cpu_t items[] =
     .cores = { .total = 56, .physical = 28 },
     .speed = { .min = 2.9, .max = 4.3 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 14 },
-    .cacheL3 = { .measure = "MB", .size = 38.5 },
-    .thermalDesignPower = { .measure = "watts", .value = 250 },
+    .technologyNode = { .unit = "nanometers", .value = 14 },
+    .cacheL3 = { .unit = "MB", .size = 38.5 },
+    .thermalDesignPower = { .unit = "watts", .value = 250 },
     .released = "2021-04-06"
   },
   {
@@ -1104,9 +1104,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 2.8, .max = 3.6 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 105 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 105 },
     .released = "2021-04-06"
   },
   {
@@ -1116,9 +1116,9 @@ static const cpu_t items[] =
     .cores = { .total = 24, .physical = 12 },
     .speed = { .min = 2.1, .max = 3.3 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 18 },
-    .thermalDesignPower = { .measure = "watts", .value = 120 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 18 },
+    .thermalDesignPower = { .unit = "watts", .value = 120 },
     .released = "2021-04-06"
   },
   {
@@ -1128,9 +1128,9 @@ static const cpu_t items[] =
     .cores = { .total = 20, .physical = 10 },
     .speed = { .min = 2.3, .max = 3.4 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 15 },
-    .thermalDesignPower = { .measure = "watts", .value = 105 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 15 },
+    .thermalDesignPower = { .unit = "watts", .value = 105 },
     .released = "2021-04-06"
   },
   {
@@ -1140,9 +1140,9 @@ static const cpu_t items[] =
     .cores = { .total = 32, .physical = 16 },
     .speed = { .min = 2.4, .max = 3.4 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 24 },
-    .thermalDesignPower = { .measure = "watts", .value = 135 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 24 },
+    .thermalDesignPower = { .unit = "watts", .value = 135 },
     .released = "2021-04-06"
   },
   {
@@ -1152,9 +1152,9 @@ static const cpu_t items[] =
     .cores = { .total = 40, .physical = 20 },
     .speed = { .min = 2.3, .max = 3.4 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 30 },
-    .thermalDesignPower = { .measure = "watts", .value = 150 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 30 },
+    .thermalDesignPower = { .unit = "watts", .value = 150 },
     .released = "2021-04-06"
   },
   {
@@ -1164,9 +1164,9 @@ static const cpu_t items[] =
     .cores = { .total = 24, .physical = 12 },
     .speed = { .min = 3.5, .max = 4 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 18 },
-    .thermalDesignPower = { .measure = "watts", .value = 220 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 18 },
+    .thermalDesignPower = { .unit = "watts", .value = 220 },
     .released = "2021-07-29"
   },
   {
@@ -1176,9 +1176,9 @@ static const cpu_t items[] =
     .cores = { .total = 32, .physical = 16 },
     .speed = { .min = 3.4, .max = 4 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 24 },
-    .thermalDesignPower = { .measure = "watts", .value = 250 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 24 },
+    .thermalDesignPower = { .unit = "watts", .value = 250 },
     .released = "2021-07-29"
   },
   {
@@ -1188,9 +1188,9 @@ static const cpu_t items[] =
     .cores = { .total = 48, .physical = 24 },
     .speed = { .min = 3, .max = 4 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 36 },
-    .thermalDesignPower = { .measure = "watts", .value = 250 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 36 },
+    .thermalDesignPower = { .unit = "watts", .value = 250 },
     .released = "2021-07-29"
   },
   {
@@ -1200,9 +1200,9 @@ static const cpu_t items[] =
     .cores = { .total = 64, .physical = 32 },
     .speed = { .min = 2.7, .max = 4 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 48 },
-    .thermalDesignPower = { .measure = "watts", .value = 270 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 48 },
+    .thermalDesignPower = { .unit = "watts", .value = 270 },
     .released = "2021-07-29"
   },
   {
@@ -1212,9 +1212,9 @@ static const cpu_t items[] =
     .cores = { .total = 76, .physical = 38 },
     .speed = { .min = 2.5, .max = 4 },
     .socket = "4189",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 57 },
-    .thermalDesignPower = { .measure = "watts", .value = 270 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 57 },
+    .thermalDesignPower = { .unit = "watts", .value = 270 },
     .released = "2021-07-29"
   },
   {
@@ -1224,9 +1224,9 @@ static const cpu_t items[] =
     .cores = { .total = 4, .physical = 2 },
     .speed = { .min = 3, .max = 3 },
     .socket = "FP6",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 8 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 8 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-05-05"
   },
   {
@@ -1236,9 +1236,9 @@ static const cpu_t items[] =
     .cores = { .total = 8, .physical = 4 },
     .speed = { .min = 2.7, .max = 4.1 },
     .socket = "FP6",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 8 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 8 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-05-05"
   },
   {
@@ -1248,9 +1248,9 @@ static const cpu_t items[] =
     .cores = { .total = 8, .physical = 4 },
     .speed = { .min = 2.7, .max = 4.1 },
     .socket = "FP6",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 8 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 8 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-01-06"
   },
   {
@@ -1260,9 +1260,9 @@ static const cpu_t items[] =
     .cores = { .total = 8, .physical = 4 },
     .speed = { .min = 2.7, .max = 4.1 },
     .socket = "FP6",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 8 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 8 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-04-19"
   },
   {
@@ -1272,9 +1272,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 6 },
     .speed = { .min = 2.3, .max = 4.3 },
     .socket = "FP6",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-05-05"
   },
   {
@@ -1284,9 +1284,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 6 },
     .speed = { .min = 2.3, .max = 4.3 },
     .socket = "FP6",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-01-06"
   },
   {
@@ -1296,9 +1296,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 6 },
     .speed = { .min = 3.3, .max = 4.5 },
     .socket = "FP7",
-    .size = { .measure = "nanometers", .value = 6 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 45 },
+    .technologyNode = { .unit = "nanometers", .value = 6 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 45 },
     .released = "2022-01-01"
   },
   {
@@ -1308,9 +1308,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 6 },
     .speed = { .min = 3.3, .max = 4.5 },
     .socket = "FP7",
-    .size = { .measure = "nanometers", .value = 6 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 35 },
+    .technologyNode = { .unit = "nanometers", .value = 6 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 35 },
     .released = "2022-01-01"
   },
   {
@@ -1320,9 +1320,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 6 },
     .speed = { .min = 2.9, .max = 4.5 },
     .socket = "FP7",
-    .size = { .measure = "nanometers", .value = 6 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 6 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-01-01"
   },
   {
@@ -1332,9 +1332,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 6 },
     .speed = { .min = 4.7, .max = 5.3 },
     .socket = "AM5",
-    .size = { .measure = "nanometers", .value = 5 },
-    .cacheL3 = { .measure = "MB", .size = 32 },
-    .thermalDesignPower = { .measure = "watts", .value = 105 },
+    .technologyNode = { .unit = "nanometers", .value = 5 },
+    .cacheL3 = { .unit = "MB", .size = 32 },
+    .thermalDesignPower = { .unit = "watts", .value = 105 },
     .released = "2022-09-27"
   },
   {
@@ -1344,9 +1344,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 6 },
     .speed = { .min = 2.3, .max = 4.3 },
     .socket = "FP6",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-04-19"
   },
   {
@@ -1356,9 +1356,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 6 },
     .speed = { .min = 3.3, .max = 4.5 },
     .socket = "FP7",
-    .size = { .measure = "nanometers", .value = 6 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 45 },
+    .technologyNode = { .unit = "nanometers", .value = 6 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 45 },
     .released = "2022-04-19"
   },
   {
@@ -1368,9 +1368,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 6 },
     .speed = { .min = 3.3, .max = 4.5 },
     .socket = "FP7",
-    .size = { .measure = "nanometers", .value = 6 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 35 },
+    .technologyNode = { .unit = "nanometers", .value = 6 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 35 },
     .released = "2022-04-19"
   },
   {
@@ -1380,9 +1380,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 6 },
     .speed = { .min = 2.9, .max = 4.5 },
     .socket = "FP7",
-    .size = { .measure = "nanometers", .value = 6 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 6 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-04-19"
   },
   {
@@ -1392,9 +1392,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 2, .max = 4.5 },
     .socket = "FP6",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-05-05"
   },
   {
@@ -1404,9 +1404,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 2, .max = 4.5 },
     .socket = "FP6",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-01-06"
   },
   {
@@ -1416,9 +1416,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 3.2, .max = 4.7 },
     .socket = "FP7",
-    .size = { .measure = "nanometers", .value = 6 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 45 },
+    .technologyNode = { .unit = "nanometers", .value = 6 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 45 },
     .released = "2022-01-01"
   },
   {
@@ -1428,9 +1428,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 3.2, .max = 4.7 },
     .socket = "FP7",
-    .size = { .measure = "nanometers", .value = 6 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 35 },
+    .technologyNode = { .unit = "nanometers", .value = 6 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 35 },
     .released = "2022-01-01"
   },
   {
@@ -1440,9 +1440,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 2.7, .max = 4.7 },
     .socket = "FP7",
-    .size = { .measure = "nanometers", .value = 6 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 6 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-01-01"
   },
   {
@@ -1452,9 +1452,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 4.5, .max = 5.4 },
     .socket = "AM5",
-    .size = { .measure = "nanometers", .value = 5 },
-    .cacheL3 = { .measure = "MB", .size = 32 },
-    .thermalDesignPower = { .measure = "watts", .value = 105 },
+    .technologyNode = { .unit = "nanometers", .value = 5 },
+    .cacheL3 = { .unit = "MB", .size = 32 },
+    .thermalDesignPower = { .unit = "watts", .value = 105 },
     .released = "2022-09-27"
   },
   {
@@ -1464,9 +1464,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 2, .max = 4.5 },
     .socket = "FP6",
-    .size = { .measure = "nanometers", .value = 7 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 7 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-04-19"
   },
   {
@@ -1476,9 +1476,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 3.2, .max = 4.7 },
     .socket = "FP7",
-    .size = { .measure = "nanometers", .value = 6 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 45 },
+    .technologyNode = { .unit = "nanometers", .value = 6 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 45 },
     .released = "2022-04-19"
   },
   {
@@ -1488,9 +1488,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 3.2, .max = 4.7 },
     .socket = "FP7",
-    .size = { .measure = "nanometers", .value = 6 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 35 },
+    .technologyNode = { .unit = "nanometers", .value = 6 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 35 },
     .released = "2022-04-19"
   },
   {
@@ -1500,9 +1500,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 2.7, .max = 4.7 },
     .socket = "FP7",
-    .size = { .measure = "nanometers", .value = 6 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 6 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-04-19"
   },
   {
@@ -1512,9 +1512,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 3.3, .max = 4.9 },
     .socket = "FP7",
-    .size = { .measure = "nanometers", .value = 6 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 35 },
+    .technologyNode = { .unit = "nanometers", .value = 6 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 35 },
     .released = "2022-01-01"
   },
   {
@@ -1524,9 +1524,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 3.3, .max = 4.9 },
     .socket = "FP7",
-    .size = { .measure = "nanometers", .value = 6 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 45 },
+    .technologyNode = { .unit = "nanometers", .value = 6 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 45 },
     .released = "2022-01-01"
   },
   {
@@ -1536,9 +1536,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 3.3, .max = 5 },
     .socket = "FP7",
-    .size = { .measure = "nanometers", .value = 6 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 45 },
+    .technologyNode = { .unit = "nanometers", .value = 6 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 45 },
     .released = "2022-01-01"
   },
   {
@@ -1548,9 +1548,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 3.3, .max = 5 },
     .socket = "FP7",
-    .size = { .measure = "nanometers", .value = 6 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 45 },
+    .technologyNode = { .unit = "nanometers", .value = 6 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 45 },
     .released = "2022-01-01"
   },
   {
@@ -1560,9 +1560,9 @@ static const cpu_t items[] =
     .cores = { .total = 24, .physical = 12 },
     .speed = { .min = 4.7, .max = 5.6 },
     .socket = "AM5",
-    .size = { .measure = "nanometers", .value = 5 },
-    .cacheL3 = { .measure = "MB", .size = 64 },
-    .thermalDesignPower = { .measure = "watts", .value = 170 },
+    .technologyNode = { .unit = "nanometers", .value = 5 },
+    .cacheL3 = { .unit = "MB", .size = 64 },
+    .thermalDesignPower = { .unit = "watts", .value = 170 },
     .released = "2022-09-27"
   },
   {
@@ -1572,9 +1572,9 @@ static const cpu_t items[] =
     .cores = { .total = 32, .physical = 16 },
     .speed = { .min = 4.5, .max = 5.7 },
     .socket = "AM5",
-    .size = { .measure = "nanometers", .value = 5 },
-    .cacheL3 = { .measure = "MB", .size = 64 },
-    .thermalDesignPower = { .measure = "watts", .value = 170 },
+    .technologyNode = { .unit = "nanometers", .value = 5 },
+    .cacheL3 = { .unit = "MB", .size = 64 },
+    .thermalDesignPower = { .unit = "watts", .value = 170 },
     .released = "2022-09-27"
   },
   {
@@ -1584,9 +1584,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 3.3, .max = 4.9 },
     .socket = "FP7",
-    .size = { .measure = "nanometers", .value = 6 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 45 },
+    .technologyNode = { .unit = "nanometers", .value = 6 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 45 },
     .released = "2022-04-19"
   },
   {
@@ -1596,9 +1596,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 8 },
     .speed = { .min = 3.3, .max = 4.9 },
     .socket = "FP7",
-    .size = { .measure = "nanometers", .value = 6 },
-    .cacheL3 = { .measure = "MB", .size = 16 },
-    .thermalDesignPower = { .measure = "watts", .value = 35 },
+    .technologyNode = { .unit = "nanometers", .value = 6 },
+    .cacheL3 = { .unit = "MB", .size = 16 },
+    .thermalDesignPower = { .unit = "watts", .value = 35 },
     .released = "2022-04-19"
   },
   {
@@ -1608,9 +1608,9 @@ static const cpu_t items[] =
     .cores = { .total = 6, .physical = 5 },
     .speed = { .min = 1, .max = 1 },
     .socket = "BGA 1781",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 8 },
-    .thermalDesignPower = { .measure = "watts", .value = 9 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 8 },
+    .thermalDesignPower = { .unit = "watts", .value = 9 },
     .released = "2022-02-23"
   },
   {
@@ -1620,9 +1620,9 @@ static const cpu_t items[] =
     .cores = { .total = 6, .physical = 5 },
     .speed = { .min = 1.1, .max = 1.1 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 8 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 8 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-02-23"
   },
   {
@@ -1632,9 +1632,9 @@ static const cpu_t items[] =
     .cores = { .total = 2, .physical = 2 },
     .speed = { .min = 3.4, .max = 3.4 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 4 },
-    .thermalDesignPower = { .measure = "watts", .value = 46 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 4 },
+    .thermalDesignPower = { .unit = "watts", .value = 46 },
     .released = "2022-01-04"
   },
   {
@@ -1644,9 +1644,9 @@ static const cpu_t items[] =
     .cores = { .total = 2, .physical = 2 },
     .speed = { .min = 3, .max = 3 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 4 },
-    .thermalDesignPower = { .measure = "watts", .value = 46 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 4 },
+    .thermalDesignPower = { .unit = "watts", .value = 46 },
     .released = "2022-01-04"
   },
   {
@@ -1656,9 +1656,9 @@ static const cpu_t items[] =
     .cores = { .total = 2, .physical = 2 },
     .speed = { .min = 2.8, .max = 2.8 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 4 },
-    .thermalDesignPower = { .measure = "watts", .value = 35 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 4 },
+    .thermalDesignPower = { .unit = "watts", .value = 35 },
     .released = "2022-01-04"
   },
   {
@@ -1668,9 +1668,9 @@ static const cpu_t items[] =
     .cores = { .total = 2, .physical = 2 },
     .speed = { .min = 2.4, .max = 2.4 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 4 },
-    .thermalDesignPower = { .measure = "watts", .value = 35 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 4 },
+    .thermalDesignPower = { .unit = "watts", .value = 35 },
     .released = "2022-01-04"
   },
   {
@@ -1680,9 +1680,9 @@ static const cpu_t items[] =
     .cores = { .total = 8, .physical = 4 },
     .speed = { .min = 3.3, .max = 4.3 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 60 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 60 },
     .released = "2022-01-04"
   },
   {
@@ -1692,9 +1692,9 @@ static const cpu_t items[] =
     .cores = { .total = 8, .physical = 4 },
     .speed = { .min = 3.2, .max = 4.2 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 60 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 60 },
     .released = "2022-01-04"
   },
   {
@@ -1704,9 +1704,9 @@ static const cpu_t items[] =
     .cores = { .total = 8, .physical = 4 },
     .speed = { .min = 2.2, .max = 4.1 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 35 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 35 },
     .released = "2022-01-01"
   },
   {
@@ -1716,9 +1716,9 @@ static const cpu_t items[] =
     .cores = { .total = 8, .physical = 4 },
     .speed = { .min = 2.1, .max = 4 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 35 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 35 },
     .released = "2022-01-01"
   },
   {
@@ -1728,9 +1728,9 @@ static const cpu_t items[] =
     .cores = { .total = 8, .physical = 6 },
     .speed = { .min = 1, .max = 4.4 },
     .socket = "BGA 1781",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 10 },
-    .thermalDesignPower = { .measure = "watts", .value = 9 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 10 },
+    .thermalDesignPower = { .unit = "watts", .value = 9 },
     .released = "2022-02-23"
   },
   {
@@ -1740,9 +1740,9 @@ static const cpu_t items[] =
     .cores = { .total = 8, .physical = 6 },
     .speed = { .min = 1.2, .max = 4.4 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 10 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 10 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-02-23"
   },
   {
@@ -1752,9 +1752,9 @@ static const cpu_t items[] =
     .cores = { .total = 8, .physical = 6 },
     .speed = { .min = 1.2, .max = 4.4 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 10 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 10 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-02-23"
   },
   {
@@ -1764,9 +1764,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 10 },
     .speed = { .min = 1.5, .max = 4.4 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 28 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 28 },
     .released = "2022-02-23"
   },
   {
@@ -1776,9 +1776,9 @@ static const cpu_t items[] =
     .cores = { .total = 8, .physical = 4 },
     .speed = { .min = 3.5, .max = 4.4 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 60 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 60 },
     .released = "2022-01-01"
   },
   {
@@ -1788,9 +1788,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 8 },
     .speed = { .min = 1.9, .max = 4.3 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 45 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 45 },
     .released = "2022-01-01"
   },
   {
@@ -1800,9 +1800,9 @@ static const cpu_t items[] =
     .cores = { .total = 8, .physical = 4 },
     .speed = { .min = 2.3, .max = 4.2 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 35 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 35 },
     .released = "2022-01-01"
   },
   {
@@ -1812,9 +1812,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 10 },
     .speed = { .min = 1, .max = 4.4 },
     .socket = "BGA 1781",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 9 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 9 },
     .released = "2022-02-23"
   },
   {
@@ -1824,9 +1824,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 10 },
     .speed = { .min = 1.3, .max = 4.4 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-02-23"
   },
   {
@@ -1836,9 +1836,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 10 },
     .speed = { .min = 1.3, .max = 4.4 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-02-23"
   },
   {
@@ -1848,9 +1848,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 6 },
     .speed = { .min = 2.5, .max = 4.4 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 18 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 18 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2022-01-04"
   },
   {
@@ -1860,9 +1860,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 6 },
     .speed = { .min = 1.8, .max = 4.2 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 18 },
-    .thermalDesignPower = { .measure = "watts", .value = 35 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 18 },
+    .thermalDesignPower = { .unit = "watts", .value = 35 },
     .released = "2022-01-01"
   },
   {
@@ -1872,9 +1872,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 12 },
     .speed = { .min = 1.7, .max = 4.4 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 28 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 28 },
     .released = "2022-02-23"
   },
   {
@@ -1884,9 +1884,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 10 },
     .speed = { .min = 1.1, .max = 4.4 },
     .socket = "BGA 1781",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 9 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 9 },
     .released = "2022-02-23"
   },
   {
@@ -1896,9 +1896,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 8 },
     .speed = { .min = 2, .max = 4.4 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 45 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 45 },
     .released = "2022-01-01"
   },
   {
@@ -1908,9 +1908,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 8 },
     .speed = { .min = 2.4, .max = 4.4 },
     .socket = "BGA 1964",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 55 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 55 },
     .released = "2022-05-10"
   },
   {
@@ -1920,9 +1920,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 10 },
     .speed = { .min = 1.6, .max = 4.4 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-02-23"
   },
   {
@@ -1932,9 +1932,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 12 },
     .speed = { .min = 2.5, .max = 4.5 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 18 },
-    .thermalDesignPower = { .measure = "watts", .value = 45 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 18 },
+    .thermalDesignPower = { .unit = "watts", .value = 45 },
     .released = "2022-01-01"
   },
   {
@@ -1944,9 +1944,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 12 },
     .speed = { .min = 1.7, .max = 4.4 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 28 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 28 },
     .released = "2022-02-23"
   },
   {
@@ -1956,9 +1956,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 12 },
     .speed = { .min = 2.7, .max = 4.5 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 18 },
-    .thermalDesignPower = { .measure = "watts", .value = 45 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 18 },
+    .thermalDesignPower = { .unit = "watts", .value = 45 },
     .released = "2022-01-01"
   },
   {
@@ -1968,9 +1968,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 12 },
     .speed = { .min = 2.5, .max = 4.6 },
     .socket = "BGA 1964",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 18 },
-    .thermalDesignPower = { .measure = "watts", .value = 55 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 18 },
+    .thermalDesignPower = { .unit = "watts", .value = 55 },
     .released = "2022-05-10"
   },
   {
@@ -1980,9 +1980,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 10 },
     .speed = { .min = 2.5, .max = 4.6 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 20 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 20 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2022"
   },
   {
@@ -1992,9 +1992,9 @@ static const cpu_t items[] =
     .cores = { .total = 20, .physical = 14 },
     .speed = { .min = 3.5, .max = 5.1 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 24 },
-    .thermalDesignPower = { .measure = "watts", .value = 125 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 24 },
+    .thermalDesignPower = { .unit = "watts", .value = 125 },
     .released = "2022-09-27"
   },
   {
@@ -2004,9 +2004,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 10 },
     .speed = { .min = 1.1, .max = 4.7 },
     .socket = "BGA 1781",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 9 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 9 },
     .released = "2022-02-23"
   },
   {
@@ -2016,9 +2016,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 10 },
     .speed = { .min = 1.7, .max = 4.7 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-02-23"
   },
   {
@@ -2028,9 +2028,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 12 },
     .speed = { .min = 2.1, .max = 4.7 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 18 },
-    .thermalDesignPower = { .measure = "watts", .value = 28 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 18 },
+    .thermalDesignPower = { .unit = "watts", .value = 28 },
     .released = "2022-02-23"
   },
   {
@@ -2040,9 +2040,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 10 },
     .speed = { .min = 1.1, .max = 4.7 },
     .socket = "BGA 1781",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 9 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 9 },
     .released = "2022-02-23"
   },
   {
@@ -2052,9 +2052,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 10 },
     .speed = { .min = 2.3, .max = 4.7 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 24 },
-    .thermalDesignPower = { .measure = "watts", .value = 45 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 24 },
+    .thermalDesignPower = { .unit = "watts", .value = 45 },
     .released = "2022-01-01"
   },
   {
@@ -2064,9 +2064,9 @@ static const cpu_t items[] =
     .cores = { .total = 20, .physical = 14 },
     .speed = { .min = 2, .max = 4.7 },
     .socket = "BGA 1964",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 24 },
-    .thermalDesignPower = { .measure = "watts", .value = 55 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 24 },
+    .thermalDesignPower = { .unit = "watts", .value = 55 },
     .released = "2022-05-10"
   },
   {
@@ -2076,9 +2076,9 @@ static const cpu_t items[] =
     .cores = { .total = 12, .physical = 10 },
     .speed = { .min = 1.8, .max = 4.8 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 12 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 12 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-02-23"
   },
   {
@@ -2088,9 +2088,9 @@ static const cpu_t items[] =
     .cores = { .total = 20, .physical = 12 },
     .speed = { .min = 2.1, .max = 4.8 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 25 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 25 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2022-01-01"
   },
   {
@@ -2100,9 +2100,9 @@ static const cpu_t items[] =
     .cores = { .total = 20, .physical = 14 },
     .speed = { .min = 2.3, .max = 4.7 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 24 },
-    .thermalDesignPower = { .measure = "watts", .value = 45 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 24 },
+    .thermalDesignPower = { .unit = "watts", .value = 45 },
     .released = "2022-01-01"
   },
   {
@@ -2112,9 +2112,9 @@ static const cpu_t items[] =
     .cores = { .total = 20, .physical = 12 },
     .speed = { .min = 1.4, .max = 4.7 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 25 },
-    .thermalDesignPower = { .measure = "watts", .value = 35 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 25 },
+    .thermalDesignPower = { .unit = "watts", .value = 35 },
     .released = "2022-01-01"
   },
   {
@@ -2124,9 +2124,9 @@ static const cpu_t items[] =
     .cores = { .total = 20, .physical = 12 },
     .speed = { .min = 1.4, .max = 4.6 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 25 },
-    .thermalDesignPower = { .measure = "watts", .value = 35 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 25 },
+    .thermalDesignPower = { .unit = "watts", .value = 35 },
     .released = "2022-01-01"
   },
   {
@@ -2136,9 +2136,9 @@ static const cpu_t items[] =
     .cores = { .total = 16, .physical = 12 },
     .speed = { .min = 2.2, .max = 4.8 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 18 },
-    .thermalDesignPower = { .measure = "watts", .value = 28 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 18 },
+    .thermalDesignPower = { .unit = "watts", .value = 28 },
     .released = "2022-02-23"
   },
   {
@@ -2148,9 +2148,9 @@ static const cpu_t items[] =
     .cores = { .total = 20, .physical = 14 },
     .speed = { .min = 2.4, .max = 4.8 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 24 },
-    .thermalDesignPower = { .measure = "watts", .value = 45 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 24 },
+    .thermalDesignPower = { .unit = "watts", .value = 45 },
     .released = "2022-01-01"
   },
   {
@@ -2160,9 +2160,9 @@ static const cpu_t items[] =
     .cores = { .total = 20, .physical = 14 },
     .speed = { .min = 2.4, .max = 4.6 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 24 },
-    .thermalDesignPower = { .measure = "watts", .value = 45 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 24 },
+    .thermalDesignPower = { .unit = "watts", .value = 45 },
     .released = "2022-01-01"
   },
   {
@@ -2172,9 +2172,9 @@ static const cpu_t items[] =
     .cores = { .total = 24, .physical = 16 },
     .speed = { .min = 2, .max = 4.8 },
     .socket = "BGA 1964",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 25 },
-    .thermalDesignPower = { .measure = "watts", .value = 55 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 25 },
+    .thermalDesignPower = { .unit = "watts", .value = 55 },
     .released = "2022-05-10"
   },
   {
@@ -2184,9 +2184,9 @@ static const cpu_t items[] =
     .cores = { .total = 20, .physical = 14 },
     .speed = { .min = 1.8, .max = 4.8 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 24 },
-    .thermalDesignPower = { .measure = "watts", .value = 28 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 24 },
+    .thermalDesignPower = { .unit = "watts", .value = 28 },
     .released = "2022-02-23"
   },
   {
@@ -2196,9 +2196,9 @@ static const cpu_t items[] =
     .cores = { .total = 24, .physical = 16 },
     .speed = { .min = 2.1, .max = 4.8 },
     .socket = "BGA 1964",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 25 },
-    .thermalDesignPower = { .measure = "watts", .value = 55 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 25 },
+    .thermalDesignPower = { .unit = "watts", .value = 55 },
     .released = "2022-05-10"
   },
   {
@@ -2208,9 +2208,9 @@ static const cpu_t items[] =
     .cores = { .total = 24, .physical = 16 },
     .speed = { .min = 3.4, .max = 5.4 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 30 },
-    .thermalDesignPower = { .measure = "watts", .value = 125 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 30 },
+    .thermalDesignPower = { .unit = "watts", .value = 125 },
     .released = "2022-09-27"
   },
   {
@@ -2220,9 +2220,9 @@ static const cpu_t items[] =
     .cores = { .total = 24, .physical = 16 },
     .speed = { .min = 2.4, .max = 5.1 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 30 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 30 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2022-01-04"
   },
   {
@@ -2232,9 +2232,9 @@ static const cpu_t items[] =
     .cores = { .total = 24, .physical = 16 },
     .speed = { .min = 2.3, .max = 5 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 30 },
-    .thermalDesignPower = { .measure = "watts", .value = 65 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 30 },
+    .thermalDesignPower = { .unit = "watts", .value = 65 },
     .released = "2022-01-04"
   },
   {
@@ -2244,9 +2244,9 @@ static const cpu_t items[] =
     .cores = { .total = 20, .physical = 14 },
     .speed = { .min = 2.5, .max = 5 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 24 },
-    .thermalDesignPower = { .measure = "watts", .value = 45 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 24 },
+    .thermalDesignPower = { .unit = "watts", .value = 45 },
     .released = "2022-01-04"
   },
   {
@@ -2256,9 +2256,9 @@ static const cpu_t items[] =
     .cores = { .total = 20, .physical = 14 },
     .speed = { .min = 2.5, .max = 5 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 24 },
-    .thermalDesignPower = { .measure = "watts", .value = 45 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 24 },
+    .thermalDesignPower = { .unit = "watts", .value = 45 },
     .released = "2022-01-04"
   },
   {
@@ -2268,9 +2268,9 @@ static const cpu_t items[] =
     .cores = { .total = 24, .physical = 16 },
     .speed = { .min = 2.3, .max = 5 },
     .socket = "BGA 1964",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 30 },
-    .thermalDesignPower = { .measure = "watts", .value = 55 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 30 },
+    .thermalDesignPower = { .unit = "watts", .value = 55 },
     .released = "2022-05-10"
   },
   {
@@ -2280,9 +2280,9 @@ static const cpu_t items[] =
     .cores = { .total = 24, .physical = 16 },
     .speed = { .min = 3.4, .max = 5.5 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 30 },
-    .thermalDesignPower = { .measure = "watts", .value = 150 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 30 },
+    .thermalDesignPower = { .unit = "watts", .value = 150 },
     .released = "2022-04-05"
   },
   {
@@ -2292,9 +2292,9 @@ static const cpu_t items[] =
     .cores = { .total = 24, .physical = 16 },
     .speed = { .min = 1.4, .max = 4.9 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 30 },
-    .thermalDesignPower = { .measure = "watts", .value = 35 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 30 },
+    .thermalDesignPower = { .unit = "watts", .value = 35 },
     .released = "2022-01-04"
   },
   {
@@ -2304,9 +2304,9 @@ static const cpu_t items[] =
     .cores = { .total = 24, .physical = 16 },
     .speed = { .min = 1.1, .max = 4.8 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 30 },
-    .thermalDesignPower = { .measure = "watts", .value = 35 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 30 },
+    .thermalDesignPower = { .unit = "watts", .value = 35 },
     .released = "2022-01-04"
   },
   {
@@ -2316,9 +2316,9 @@ static const cpu_t items[] =
     .cores = { .total = 24, .physical = 16 },
     .speed = { .min = 2.3, .max = 5 },
     .socket = "BGA 1964",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 30 },
-    .thermalDesignPower = { .measure = "watts", .value = 55 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 30 },
+    .thermalDesignPower = { .unit = "watts", .value = 55 },
     .released = "2022-05-10"
   },
   {
@@ -2328,9 +2328,9 @@ static const cpu_t items[] =
     .cores = { .total = 32, .physical = 24 },
     .speed = { .min = 2, .max = 5.6 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 36 },
-    .thermalDesignPower = { .measure = "watts", .value = 125 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 36 },
+    .thermalDesignPower = { .unit = "watts", .value = 125 },
     .released = "2022"
   },
   {
@@ -2340,9 +2340,9 @@ static const cpu_t items[] =
     .cores = { .total = 32, .physical = 24 },
     .speed = { .min = 3, .max = 5.8 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 36 },
-    .thermalDesignPower = { .measure = "watts", .value = 125 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 36 },
+    .thermalDesignPower = { .unit = "watts", .value = 125 },
     .released = "2022-09-27"
   },
   {
@@ -2352,9 +2352,9 @@ static const cpu_t items[] =
     .cores = { .total = 6, .physical = 5 },
     .speed = { .min = 1, .max = 4.4 },
     .socket = "BGA 1781",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 8 },
-    .thermalDesignPower = { .measure = "watts", .value = 9 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 8 },
+    .thermalDesignPower = { .unit = "watts", .value = 9 },
     .released = "2022-02-23"
   },
   {
@@ -2364,9 +2364,9 @@ static const cpu_t items[] =
     .cores = { .total = 6, .physical = 5 },
     .speed = { .min = 1.2, .max = 4.4 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 8 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 8 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-02-23"
   },
   {
@@ -2376,9 +2376,9 @@ static const cpu_t items[] =
     .cores = { .total = 6, .physical = 5 },
     .speed = { .min = 1.2, .max = 4.4 },
     .socket = "BGA 1744",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 8 },
-    .thermalDesignPower = { .measure = "watts", .value = 15 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 8 },
+    .thermalDesignPower = { .unit = "watts", .value = 15 },
     .released = "2022-02-23"
   },
   {
@@ -2388,9 +2388,9 @@ static const cpu_t items[] =
     .cores = { .total = 4, .physical = 2 },
     .speed = { .min = 3.7, .max = 3.7 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 6 },
-    .thermalDesignPower = { .measure = "watts", .value = 46 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 6 },
+    .thermalDesignPower = { .unit = "watts", .value = 46 },
     .released = "2022-01-04"
   },
   {
@@ -2400,9 +2400,9 @@ static const cpu_t items[] =
     .cores = { .total = 4, .physical = 2 },
     .speed = { .min = 3.6, .max = 3.6 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 6 },
-    .thermalDesignPower = { .measure = "watts", .value = 46 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 6 },
+    .thermalDesignPower = { .unit = "watts", .value = 46 },
     .released = "2022-01-04"
   },
   {
@@ -2412,9 +2412,9 @@ static const cpu_t items[] =
     .cores = { .total = 4, .physical = 2 },
     .speed = { .min = 3.1, .max = 3.1 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 6 },
-    .thermalDesignPower = { .measure = "watts", .value = 35 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 6 },
+    .thermalDesignPower = { .unit = "watts", .value = 35 },
     .released = "2022-01-04"
   },
   {
@@ -2424,9 +2424,9 @@ static const cpu_t items[] =
     .cores = { .total = 4, .physical = 2 },
     .speed = { .min = 3, .max = 3 },
     .socket = "1700",
-    .size = { .measure = "nanometers", .value = 10 },
-    .cacheL3 = { .measure = "MB", .size = 6 },
-    .thermalDesignPower = { .measure = "watts", .value = 35 },
+    .technologyNode = { .unit = "nanometers", .value = 10 },
+    .cacheL3 = { .unit = "MB", .size = 6 },
+    .thermalDesignPower = { .unit = "watts", .value = 35 },
     .released = "2022-01-04"
   }
 };
