@@ -1,0 +1,34 @@
+name: Update database
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  update_database:
+    name: Linux x64_64
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - uses: actions/setup-node@v3
+      with:
+        node-version: latest
+
+    - name: Run builder
+      working-directory: ./builder
+      run: |
+        npm install
+        npm start
+
+    - uses: EndBug/add-and-commit@v9
+      with:
+        add: 'database'
+        message: 'Regen database'
+        pull: '--ff-only'
+        push: true
+        committer_name: GitHub Actions
+        committer_email: actions@github.com
