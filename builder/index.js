@@ -4,32 +4,33 @@ const ObjectsToCsv = require('objects-to-csv');
 
 
 class Builder{
-    
+
     constructor() {
         console.log('Loading main database ...');
         this.loadMainDatabase()
         .then(data => this.makeDart(data))
         .then(data => this.makeC(data))
+        .then(data => this.makePython(data))
         .then(data => this.makeCSV(data))
         .catch(e => {
             console.log('Unable build database.');
             throw e;
         });
     }
-    
+
     async loadMainDatabase() {
         let data = fs.readFileSync('../database/cpu.json');
         return JSON.parse(data);
     }
-    
+
     async deleteIfExist(path) {
         if(fs.existsSync(path))
             return unlink(path);
     }
-    
+
     async makeDart(data) {
         console.log('Generating dart repository project ...');
-        
+
         await this.deleteIfExist('../database/dart/cpu.dart')
         .then(() => fs.writeFile('../database/dart/cpu.dart', `
 
@@ -129,7 +130,7 @@ class CPURepository {
 }
 
         `.trim(), (e) => { if(e) throw e }));
-        
+
         return data;
     }
 
@@ -205,9 +206,154 @@ const cpu_t *cpu_find_by_exact_codename(char *codename)
         return data;
     }
 
+    async makePython(data) {
+      console.log('Generating Python repository project ...');
+
+      await this.deleteIfExist('../database/python/cpu.py')
+      .then(() => fs.writeFile('../database/python/cpu.py', `
+
+from typing import Final, Optional
+
+class _ValueAndMeasure:
+  value: Final[float]
+  measure: Final[str]
+
+  def __init__(self, value: float, measure: str) -> None:
+    self.value = value
+    self.measure = measure
+
+  def __str__(self) -> str:
+    return f'{self.value} {self.measure}'
+
+  def __repr__(self) -> str:
+    return f'{__class__.__name__}(value={self.value}, measure={self.measure})'
+
+class CPUCores:
+  total: Final[int]
+  physical: Final[int]
+
+  def __init__(self, total: int, physical: int) -> None:
+    self.total = total
+    self.physical = physical
+
+  def __str__(self) -> str:
+    return f'{self.total} total cores, {self.physical} physical cores'
+
+  def __repr__(self) -> str:
+    return f'{__class__.__name__}(total={self.total}, physical={self.physical})'
+
+class CPUSpeed:
+  min: Final[float]
+  max: Final[float]
+
+  def __init__(self, min: float, max: float) -> None:
+    self.min = min
+    self.max = max
+
+  def __str__(self) -> str:
+    return f'{self.min} GHz min, {self.max} GHz max'
+
+  def __repr__(self) -> str:
+    return f'{__class__.__name__}(min={self.min}, max={self.max})'
+
+class CPUSize(_ValueAndMeasure):
+  pass
+
+class CPUCache(_ValueAndMeasure):
+  pass
+
+class CPUThermalDesignPower(_ValueAndMeasure):
+  pass
+
+class CPU():
+  name: Final[str]
+  codename: Final[str]
+  architecture: Final[str]
+  cores: Final[CPUCores]
+  speed: Final[CPUSpeed]
+  socket: Final[str]
+  size: Final[CPUSize]
+  cacheL3: Final[CPUCache]
+  thermalDesignPower: Final[CPUThermalDesignPower]
+  released: Final[Optional[str]]
+
+  def __init__(self, name: str, codename: str, architecture: str, cores: CPUCores, speed: CPUSpeed, socket: str, size: CPUSize, cacheL3: CPUCache, thermalDesignPower: CPUThermalDesignPower, released: Optional[str] = None):
+    self.name = name
+    self.codename = codename
+    self.architecture = architecture
+    self.cores = cores
+    self.speed = speed
+    self.socket = socket
+    self.size = size
+    self.cacheL3 = cacheL3
+    self.thermalDesignPower = thermalDesignPower
+    self.released = released
+
+  def __str__(self):
+    return (
+    f' - name: {self.name}\\n'
+    f' - codename: {self.codename}\\n'
+    f' - architecture: {self.architecture}\\n'
+    f' - cores: {self.cores}\\n'
+    f' - speed: {self.speed}\\n'
+    f' - socket: {self.socket}\\n'
+    f' - size: {self.size}\\n'
+    f' - cacheL3: {self.cacheL3}\\n'
+    f' - thermalDesignPower: {self.thermalDesignPower}\\n'
+    f' - released: {self.released if self.released else "unknown"}'
+    )
+
+  def __repr__(self):
+    return ('CPU('
+    f'name={self.name}, '
+    f'codename={self.codename}, '
+    f'architecture={self.architecture}, '
+    f'cores={self.cores.__repr__()}, '
+    f'speed={self.speed.__repr__()}, '
+    f'socket={self.socket}, '
+    f'size={self.size.__repr__()}, '
+    f'cacheL3={self.cacheL3.__repr__()}, '
+    f'thermalDesignPower={self.thermalDesignPower.__repr__()}, '
+    f'released={self.released}'
+    ')')
+
+# CPU Repository. Example of usage: \`cpu = CPURepository.findByName('Milan-X')\`
+class CPURepository:
+  items: list[CPU] = [
+    ${data.list.map(item => `
+    CPU(
+      name='${item.name}',
+      codename='${item.codename}',
+      architecture='${item.architecture}',
+      cores=CPUCores(total=${item.cores.total}, physical=${item.cores.physical}),
+      speed=CPUSpeed(min=${item.speedGhz.min}, max=${item.speedGhz.max}),
+      socket='${item.socket}',
+      size=CPUSize(measure='${item.size.measure}', value=${item.size.value}),
+      cacheL3=CPUCache(measure='${item.cacheL3.measure}', value=${item.cacheL3.size}),
+      thermalDesignPower=CPUThermalDesignPower(measure='${item.thermalDesignPower.measure}', value=${item.thermalDesignPower.value}),
+      released=${(item.released != null) ? `'${item.released}'` : `None`}
+    )
+    `.trim()).join(',\n    ')}
+  ]
+
+  # Find CPU by model name, or thrown a StopIteration exception if not found.
+  @classmethod
+  def findByName(cls, name: str) -> CPU:
+    return next(item for item in cls.items if item.name == name)
+
+  # Find CPU by model codename, or thrown a StopIteration exception if not found.
+  @classmethod
+  def findByCodename(cls, codename: str) -> CPU:
+    return next(item for item in cls.items if item.codename == codename)
+
+      `.trim(), (e) => { if(e) throw e }));
+
+      return data;
+    }
+
     async makeCSV(data){
         console.log('Generating CSV repository project ...');
-        
+
         await this.deleteIfExist('../database/cpu.csv')
         .then(() => (new ObjectsToCsv(data.list.map(item => ({
             name: item.name,
@@ -226,7 +372,7 @@ const cpu_t *cpu_find_by_exact_codename(char *codename)
             thermalDesignPowerValue: item.thermalDesignPower.value,
             released: (item.released != null) ? item.released : ''
         })))).toDisk('../database/cpu.csv'));
-        
+
         return data;
     }
 }
