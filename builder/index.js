@@ -31,8 +31,8 @@ class Builder{
     async makeDart(data) {
         console.log('Generating dart repository project ...');
 
-        await this.deleteIfExist('../database/dart/cpu.dart')
-        .then(() => fs.writeFile('../database/dart/cpu.dart', `
+        await this.deleteIfExist('../implementation/dart/src/cpu.dart')
+        .then(() => fs.writeFile('../implementation/dart/src/cpu.dart', `
 
 class CPUCores {
   final int total;
@@ -137,8 +137,8 @@ class CPURepository {
     async makeC(data) {
       console.log('Generating C repository project ...');
 
-      await this.deleteIfExist('../database/c/cpu.c')
-      .then(() => fs.writeFile('../database/c/cpu.c', `
+      await this.deleteIfExist('../implementation/c/src/cpu.c')
+      .then(() => fs.writeFile('../implementation/c/src/cpu.c', `
 
 #define _GNU_SOURCE
 #include <stdlib.h>
@@ -209,8 +209,8 @@ const cpu_t *cpu_find_by_exact_codename(char *codename)
     async makePython(data) {
       console.log('Generating Python repository project ...');
 
-      await this.deleteIfExist('../database/python/cpu.py')
-      .then(() => fs.writeFile('../database/python/cpu.py', `
+      await this.deleteIfExist('../implementation/python/src/cpu.py')
+      .then(() => fs.writeFile('../implementation/python/src/cpu.py', `
 
 from typing import Final, Optional
 

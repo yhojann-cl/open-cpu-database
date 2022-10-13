@@ -2,7 +2,7 @@
 import sys
 import argparse
 
-sys.path.append('../../database/python')
+sys.path.append('../src')
 from cpu import CPURepository
 
 # Parse arguments

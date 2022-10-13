@@ -1,5 +1,5 @@
 CC=gcc
-OTHERDIR=../../database/c
+OTHERDIR=../src
 CFLAGS=-Wall -Wextra -g
 CPPFLAGS=-I$(OTHERDIR)
 LDFLAGS=
