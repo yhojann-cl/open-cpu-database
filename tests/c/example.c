@@ -51,9 +51,9 @@ int main(int argc, char *argv[])
 		printf(" - cores: %i total, %i physical\n", cpu->cores.total, cpu->cores.physical);
 		printf(" - speed: %.02f GHz min, %.02f GHz max\n", cpu->speed.min, cpu->speed.max);
 		printf(" - socket: %s\n", cpu->socket);
-		printf(" - technology node: %.02f %s\n", cpu->technologyNode.value, cpu->technologyNode.measure);
-		printf(" - cache L3: %.0f %s\n", cpu->cacheL3.size, cpu->cacheL3.measure);
-		printf(" - thermal design power: %.02f %s\n", cpu->thermalDesignPower.value, cpu->thermalDesignPower.measure);
+		printf(" - technology node: %.02f %s\n", cpu->technologyNode.value, cpu->technologyNode.unit);
+		printf(" - cache L3: %.0f %s\n", cpu->cacheL3.size, cpu->cacheL3.unit);
+		printf(" - thermal design power: %.02f %s\n", cpu->thermalDesignPower.value, cpu->thermalDesignPower.unit);
 		printf(" - released: %s\n", (cpu->released) == NULL ? "unknown" : cpu->released);
 		return 0;
 	}

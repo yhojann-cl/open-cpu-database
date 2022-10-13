@@ -17,19 +17,19 @@ typedef struct
 
 typedef struct
 {
-  const char *const measure;
+  const char *const unit;
   const double value;
 } cpu_technology_node_t;
 
 typedef struct
 {
-  const char *const measure;
+  const char *const unit;
   const double size;
 } cpu_cache_t;
 
 typedef struct
 {
-  const char *const measure;
+  const char *const unit;
   const double value;
 } cpu_thermal_design_power_t;
 
