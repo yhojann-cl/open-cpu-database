@@ -9,7 +9,6 @@ class Builder{
         const dartBuilder = new DartBuilder();
         const csvBuilder = new CSVBuilder();
         const cBuilder = new CBuilder();
-        const pythonBuilder = new PythonBuilder();
 
         console.log('Loading main database ...');
         this.loadMainDatabase()
